@@ -4,7 +4,7 @@
 <head>
 	<title>AllenHsu</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="shortcut icon" href="../font/icon.ico" />
 	<link rel="icon" href="../font/icon.ico" type="image/ico" />
@@ -13,11 +13,10 @@
 		.div{
 			width: 100%;
 			height: auto;
-			
 		}
 		
 		.div .banner-text{
-			text-align: center;
+			text-align: left;
 			margin-left: 10%;
 			margin-top: 15%;
     		width: 50%;
@@ -25,22 +24,22 @@
 		}
 		.div .banner-text .h2{
 			text-align: left;
-			font-size: 1.3rem;
+			font-size: 1.3em;
     		font-family:'myFontL';
-    		line-height: 2rem;
+    		line-height: 1.5;
     		color: #fff;
 		}
 		.div .banner-text .h1{
-			font-size: 6rem;
+			font-size: 6em;
 			font-family:'myFontH';
-			line-height: 8rem;
+			line-height: 1.15;
 			color: #fff;
 			cursor: url(/font/cursor.ico),default;
 		}
 		.div .banner-text .h1child{
-			font-size: 6rem;
+			font-size: 6em;
 			font-family: 'myFontH';
-			line-height: 8rem;
+			line-height: 1.15;
 			background: linear-gradient(to right, #633bff,rgb(246, 113, 255));
   			-webkit-background-clip:text;
   			color: transparent;
@@ -52,7 +51,7 @@
 			height: 8px;
 			background: #fff;
 			opacity: 1;
-			margin: 3rem 0rem;
+			margin: 3em 0em;
 			width: 20%;
 		}
 
@@ -61,12 +60,17 @@
 			margin-left: 5%;
 			margin-top: 10%;
 			float: left;
-			width: 40rem;
-			height: 40rem;
+			width: 40em;
+			height: 40em;
 			background:url(./font/portraits.svg) 0 0 no-repeat;
 		}
 
-
+		.pic{
+			text-align: left;
+			margin-bottom: 0%;
+			margin-left: -4px;
+			padding-top: 20px;
+    	}
 	</style>
 </head>
 
@@ -103,8 +107,43 @@
 					日常工作主要是与产品、设计和用户体验相关，通过结合对产品的研究，极致的设计和对技术的理解来平衡解决方案。业余时间投入在学习 Coding 和动效制作中。
 					<br/>
 					<br/>
-					分享给你我最近在听的歌，它叫《黑暗之光》<iframe frameborder="0" src="audioindex.html" style="position:absolute;z-index:999;width:40px;height:40px;margin-left:4px;"></iframe>
+					分享给你我最近在听的歌，它叫《黑暗之光》
 				</p>
+
+				
+					<div class="pic">
+						 <audio autoplay="autoplay" id="music2" src="http://music.163.com/song/media/outer/url?id=253968.mp3" loop="loop"></audio>
+						 <a href="javascript:playPause();"><img src="font/musicon.png" id="music_btn2" ></a>
+					</div>
+				 
+				 
+				 <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+				 <script>
+				 $("#audio_btn").click(function(){
+					 var music = document.getElementById("music");
+					 if(music.paused){
+						 music.play();
+						 $("#music_btn").attr("src","font/musicoff.png");
+					 }else{
+						 music.pause();
+						 $("#music_btn").attr("src","font/musicon.png");
+					 }
+				 });
+				 
+				 function playPause() {
+					 var music = document.getElementById('music2');
+					 var music_btn = document.getElementById('music_btn2');
+					 if (music.paused){
+						 music.play();
+						 music_btn.src = 'font/musicoff.png';
+					 }
+					 else{
+						 music.pause();
+						 music_btn.src = 'font/musicon.png'; 
+					 };
+				 };
+				 </script>
+
 			</div>
 
 			<div class="icon-like"></div>
