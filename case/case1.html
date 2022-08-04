@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>案例详情</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../css/main.css" />
+	<link rel="shortcut icon" href="../font/icon.ico" />
+	<link rel="icon" href="../font/icon.ico" type="image/ico" />
+	<style>
+		.article-detail {
+			width: 1200px;
+			margin: 0 auto;
+			padding: 100px 20px 80px;
+			color: #fff;
+			word-break: break-all;
+		}
+
+		.article-detail .title {
+			font-size: 2rem;
+			word-break: break-all;
+			line-height: 3rem;
+			font-family:'myFontH';
+			margin-top: 1.2rem;
+			margin-bottom: 1rem;
+			text-align: center;
+		}
+
+		.article-detail .date {
+			font-size: 1rem;
+			line-height: 1.6rem;
+			font-family:'myFontL';
+			opacity: 0.5;
+			text-align: center;
+			margin-bottom: 5rem;
+		}
+
+		.article-detail .text{
+			font-size: 1.1rem;
+			line-height: 2rem;
+			font-family:'myFont';
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 0.6rem 2rem;
+			border:2px solid #fff;
+			border-color: #fff;
+			font-family:'myFont';
+			color:#fff;
+			cursor: url(/font/cursorlink.ico),pointer;
+			opacity: 0.8;
+			margin-bottom: 4rem;
+		}
+
+		.btn:hover {
+			/* box-shadow: 0 0 8px #fff; */
+			opacity: 1;
+		}
+
+		.article-detail img {
+			margin:40px 0px;
+			display: block;
+			width: 100%;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Wrapper -->
+	<div class="wrapper article-list">
+		<!-- Header -->
+		<header id="header">
+			<a href="../index.html" class="logo"><span>AllenHsu</span></a>
+			<ul id="menu">
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="../article.html">文章</a></li>
+				<li><a class="active" href="../case.html">案例</a></li>
+				<li><a href="../about.html">关于</a></li>
+			</ul>
+		</header>
+		<!-- Main -->
+		<div class="article-detail">
+			<div class="btn">返回列表</div>
+			<p class="title">case 1</p>
+			<p class="date">2022.5.8</p>
+			<p class="text">
+				Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading
+				Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4
+				Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading
+				Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4
+				Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading
+				Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4
+				Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading
+				Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4
+				Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading
+				Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4
+				Heading Level 4 Heading Level 4 Heading Level 4
+			</p>
+			<img src="https://img2.baidu.com/it/u=339346403,305627179&fm=253&fmt=auto&app=120&f=JPEG?w=1280&h=800"
+				alt="">
+		</div>
+
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".btn").click(function () {
+				window.location = "../case.html"
+			})
+		})
+	</script>
+</body>
+
+</html>

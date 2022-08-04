@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>文章列表</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="../font/icon.ico" />
+	<link rel="icon" href="../font/icon.ico" type="image/ico" />
+    <style>
+        .article-list-content {
+            width: 720px;
+            margin: 0 auto;
+            padding: 120px 0px;
+
+        }
+
+        .article-list-content .list {
+            width: 100%;
+            -moz-align-items: flex-start;
+            -webkit-align-items: flex-start;
+            -ms-align-items: flex-start;
+            align-items: flex-start;
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            -moz-justify-content: space-between;
+            -webkit-justify-content: space-between;
+            -ms-justify-content: space-between;
+            justify-content: space-between;
+            padding: 10px;
+            border-radius: 10px;
+            ;
+
+        }
+
+
+        .link+.link {
+            display: block;
+            margin-top: 35px;
+        }
+
+        .article-list-content .title {
+            font-size: 1.3rem;
+            font-family:'myFontH';
+            line-height: 2rem;
+            color: #fff;
+            word-break: break-all;
+        }
+
+        .article-list-content .second-title,
+        .article-list-content .date {
+            font-size: 1rem;
+            font-family:'myFontL';
+            line-height: 1.6rem;
+            color: #fff;
+            opacity: 0.4;
+            word-break: break-all;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Wrapper -->
+    <div class="wrapper article-list">
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo"><span>AllenHsu</span></a>
+            <ul id="menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a class="active" href="article.html">文章</a></li>
+                <li><a href="case.html">案例</a></li>
+                <li><a href="about.html">关于</a></li>
+            </ul>
+        </header>
+
+
+        <!-- Main -->
+        <div class="article-list-content">
+            <a class="link" href="./article/article1.html">
+                <div class="list">
+                    <div>
+                        <p class="title">article 1</p>
+                        <p class="second-title">ergergergergewrgergerg</p>
+                    </div>
+                    <p class="date">2022.5.8</p>
+                </div>
+            </a>
+            <a class="link" href="./article/article2.html">
+                <div class="list">
+                    <div>
+                        <p class="title">article 2</p>
+                        <p class="second-title">ergergergergewrgergerg</p>
+                    </div>
+                    <p class="date">2022.5.8</p>
+                </div>
+            </a>
+            <a class="link" href="./article/article3.html">
+                <div class="list">
+                    <div>
+                        <p class="title">article 3</p>
+                        <p class="second-title">ergergergergewrgergerg</p>
+                    </div>
+                    <p class="date">2022.5.8</p>
+                </div>
+            </a>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
