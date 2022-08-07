@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>文章详情</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../css/main.css" />
+	<link rel="shortcut icon" href="../font/icon.ico" />
+	<link rel="icon" href="../font/icon.ico" type="image/ico" />
+
+    <style>
+        .article-detail {
+			width: 1200px;
+			margin: 0 auto;
+			margin-bottom: 200px;
+			padding: 100px 0px 100px 0px;
+			color: #fff;
+			word-break: break-all;
+		}
+
+		.article-detail .title {
+			font-size: 3em;
+			word-break: break-all;
+			line-height: 3em;
+			font-family:'myFontH';
+			text-align: center;
+		}
+
+		.article-detail .date {
+			font-size: 1.2em;
+			line-height: 1.2em;
+			font-family:'myFontL';
+			opacity: 0.5;
+			text-align: center;
+			margin-bottom: 4em;
+		}
+
+		.article-detail .text{
+			font-size: 1.1em;
+			line-height: 2em;
+			font-family:'myFontL';
+			opacity: 0.7;
+		}
+
+		.article-detail .textpro{
+			font-size: 1.8em;
+			line-height: 2.4em;
+			font-family: 'myFont';
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 0.6em 2em;
+			border:2px solid #fff;
+			border-color: #fff;
+			font-family:'myFont';
+			color:#fff;
+			cursor: url(/font/cursorlink.ico),pointer;
+			opacity: 0.8;
+			margin-bottom: 4em;
+		}
+
+		.btn:hover {
+			/* box-shadow: 0 0 8px #fff; */
+			opacity: 1;
+		}
+
+		.quote{
+			margin: 0.25em 1.5em 0 0;
+		}
+
+		.quote::before{
+			content: "";
+			width: 35%;
+			display: block;
+			margin: 0 auto 1em;
+			height: 0;
+			border-top: 0.4em solid #152138;
+		}
+
+		.quote::after{
+			content: "";
+			width: 35%;
+			display: block;
+			margin: 2em auto 1em;
+			height: 0;
+			border-top: 0.4em solid #152138;
+		}
+
+		.quote-content{
+			display: block;
+			width: 90%;
+			text-align: center;
+			margin: 0 auto;
+			font-size: 1.4em;
+			line-height: 2em;
+			font-family: times,'Times New Roman',serif;
+			font-weight: 100;
+			opacity: 0.6;
+		}
+
+		.quote-content::before{
+			content: "“";
+			font-size: 4em;
+			opacity: .15;
+			font-family: times,'Times New Roman',serif;
+			display: inline-block;
+			transform: translate(-0.2em,0);
+		}
+
+		.quote-content::after{
+			content: "”";
+			font-size: 4em;
+			opacity: .15;
+			font-family: times,'Times New Roman',serif;
+			display: inline-block;
+			transform: translate(0.2em,0.5em);
+		}
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Wrapper -->
+    <div class="wrapper article-list">
+        <!-- Header -->
+        <header id="header">
+            <a href="../index.html" class="logo"><span>AllenHsu</span></a>
+            <ul id="menu">
+                <li><a href="../index.html">首页</a></li>
+                <li><a class="active" href="../article.html">文章</a></li>
+                <li><a href="../case.html">案例</a></li>
+                <li><a href="../about.html">关于</a></li>
+            </ul>
+        </header>
+        <!-- Main -->
+        <div class="article-detail">
+            <div class="btn">返回列表</div>
+			<p class="title">关于竞品分析的一点想法</p>
+			<p class="date">2018.11.12</p>
+			<p class="text">在我看来，做好一份竞品分析，是要做到使用逻辑思维去分析一个产品，达到分析的预设目标，并产出一份文档向受众传递你的观点和结论。 经常看到竞品分析会出现“散乱无章”、“主观臆断”、“陈述罗列”、“没有观点”、“没有结论”这些问题。</p>
+			<br>
+			<p class="text">下面我们通过三个方面来解析一下竞品分析。</p>
+			<br>
+			<p class="textpro">什么是竞品分析？</p>
+			<br>
+			<p class="text">我们让自己清楚明白地知道竞品分析不是什么，从而避免做成不是的东西。竞品分析不是产品说明书、不是流程介绍、不是用户调研报告、不是产品测评。但它同时又可能包含以上所提内容的精华。</p>
+			<br>
+			<p class="text">竞品分析是包含客观和主观部分的产品分析。客观的是这个产品的客观事实，不带有个人色彩，这部分往往是通过对产品公开信息的挖掘整理得到。主观则是你对产品的优劣判断，虽然是主观部分，但它也需要有理有据，用专业知识去做判断的支撑。这部分往往需要结合用户、场景、痛点、任务流等多种设计要素去分析判断。除此以外设计原则也是判断标准之一。</p>
+			<br>
+			<p class="textpro">为什么做竞品分析？</p>
+			<br>
+			<p class="text">弄清竞品分析的目的和受众。竞品分析是一种手段和方法，每个竞品分析都是有各自特定的分析目的，以及不同的受众。比如新人设计师入职时为了迅速了解产品和设计，都会被安排做竞品分析。比如刚起步的产品方向模糊、设计不尽如人意，希望能赶上市场上的同类产品，也需要做竞品分析。而刚刚提到的2种竞品分析，它们的目标和受众就完全不同。弄清楚每个竞品分析的目标和受众，直接决定了能否做好，因为它直接影响你在竞品分析时的侧重点和最后的文档内容结构。</p>
+			<br>
+			<p class="textpro">怎么做一份竞品分析？</p>
+			<br>
+			<p class="text">竞品分析的前提是理解产品，充分的理解之后你才有资格去评价它、分析它。不然则很容易流于表面or经不住推敲。可以通过“泛用+精用+检索”的方式来辅助理解一个产品。泛用即浏览式的用，对产品有一个概览。精用即结合具体的任务或场景精细的使用，甚至可以使用它来满足你真实的诉求。这其实也是小白用户到专家用户所经历的过程。检索即通过搜索来获取与该产品相关的信息，比如它的官网、商店中的用户反馈、评测文章等信息。</p>
+			<br>
+			<p class="text">究竟一个产品有哪些维度哪些方面可分析？你是不是完整的知晓这些可被你调用的"分析素材"？
+			<br>
+			有这几个思考的角度：从宏观到微观，从浅显到深入，从主观到客观，从主要到次要。这些思考角度都是帮助你捋清一个产品有哪些方面可以被分析和关注。这么做的目的也是为了让你先从更全面完整的角度去思考分析内容，而不是一上来就陷入冰山一角的细节不可自拔。我粗列了一下有以下方面：
+			<br>
+			<br>
+			产品版本、发版日志、产品定位、产品目标、核心价值、用户人群、核心功能、需求分析、用户痛点、使用场景、信息架构、交互流程、交互细节、设计原则、视觉风格、用户反馈、用例（任务case）、亮点/特色......
+			<br>
+			<br>
+			并不是以上每个分析角度都是必要的，这些只是可被调用的“分析素材”，但究竟调用什么，还是要由你此次的分析目的和受众关注点决定。往往调用“看不见”的分析素材会比分析“看的见”的更有价值和意义。
+			<br>
+			结合目的和受众，选择竞品分析的侧重点和内容结构。去选择要分析的方面，方面不在多不在全，而在于和你的分析目标相匹配。同时分析的内容也应该包含之前所提到的主观判断部分，并且该部分需要有专业知识做支撑，避免带有随意感，受到听众质疑。
+			<br>
+			另外还有一个很重要技巧是，组合分析"分析素材"，可以达到很好的效果。例如 "核心功能+用户反馈"、“使用场景+用例+交互流程”、“产品目标+核心功能”...这些组合式的分析，更能够辅助分析者得出一些更为全面的结论和判断。
+			</p>
+			
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".btn").click(function () {
+				window.location = "../article.html"
+			})
+		})
+	</script>
+	<script>
+		$("#audio_btn").click(function () {
+			var music = document.getElementById("music");
+			if (music.paused) {
+				music.play();
+				$("#music_btn").attr("src", "font/musicoff.png");
+			} else {
+				music.pause();
+				$("#music_btn").attr("src", "font/musicon.png");
+			}
+		});
+
+		function playPause() {
+			var music = document.getElementById('music2');
+			var music_btn = document.getElementById('music_btn2');
+			if (music.paused) {
+				music.play();
+				music_btn.src = 'font/musicoff.png';
+			} else {
+				music.pause();
+				music_btn.src = 'font/musicon.png';
+			};
+		};
+		$(document).ready(function () {
+			var fn = function () {
+				var w = document.body.clientWidth;
+				var rate = (w) / 1980
+				$(".wrapper").css({
+					zoom: rate
+				});
+			};
+			if (window.addEventListener) {
+				window.addEventListener("resize", function () {
+					fn();
+				});
+			} else if (window.attachEvent) {
+				window.attachEvent("onresize", function () {
+					fn();
+				});
+			}
+			fn();
+		});
+	</script>
+
+
+</body>
+
+</html>
