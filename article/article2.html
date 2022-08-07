@@ -13,52 +13,104 @@
         .article-detail {
 			width: 1200px;
 			margin: 0 auto;
-			padding: 100px 20px 80px;
+			margin-bottom: 200px;
+			padding: 100px 0px 100px 0px;
 			color: #fff;
 			word-break: break-all;
 		}
 
 		.article-detail .title {
-			font-size: 2rem;
+			font-size: 3em;
 			word-break: break-all;
-			line-height: 3rem;
+			line-height: 3em;
 			font-family:'myFontH';
-			margin-top: 1.2rem;
-			margin-bottom: 1rem;
 			text-align: center;
 		}
 
 		.article-detail .date {
-			font-size: 1rem;
-			line-height: 1.6rem;
+			font-size: 1.2em;
+			line-height: 1.2em;
 			font-family:'myFontL';
 			opacity: 0.5;
 			text-align: center;
-			margin-bottom: 5rem;
+			margin-bottom: 4em;
 		}
 
 		.article-detail .text{
-			font-size: 1.1rem;
-			line-height: 2rem;
-			font-family:'myFont';
+			font-size: 1.1em;
+			line-height: 2em;
+			font-family:'myFontL';
 		}
 
 		.btn {
 			display: inline-block;
-			padding: 0.6rem 2rem;
+			padding: 0.6em 2em;
 			border:2px solid #fff;
 			border-color: #fff;
 			font-family:'myFont';
 			color:#fff;
 			cursor: url(/font/cursorlink.ico),pointer;
 			opacity: 0.8;
-			margin-bottom: 4rem;
+			margin-bottom: 4em;
 		}
 
 		.btn:hover {
 			/* box-shadow: 0 0 8px #fff; */
 			opacity: 1;
 		}
+
+		.quote{
+			margin: 0.25em 1.5em 0 0;
+		}
+
+		.quote::before{
+			content: "";
+			width: 35%;
+			display: block;
+			margin: 0 auto 1em;
+			height: 0;
+			border-top: 0.4em solid #152138;
+		}
+
+		.quote::after{
+			content: "";
+			width: 35%;
+			display: block;
+			margin: 2em auto 1em;
+			height: 0;
+			border-top: 0.4em solid #152138;
+		}
+
+		.quote-content{
+			display: block;
+			width: 90%;
+			text-align: center;
+			margin: 0 auto;
+			font-size: 1.4em;
+			line-height: 2em;
+			font-family: times,'Times New Roman',serif;
+			font-weight: 100;
+			opacity: 0.6;
+		}
+
+		.quote-content::before{
+			content: "“";
+			font-size: 4em;
+			opacity: .15;
+			font-family: times,'Times New Roman',serif;
+			display: inline-block;
+			transform: translate(-0.2em,0);
+		}
+
+		.quote-content::after{
+			content: "”";
+			font-size: 4em;
+			opacity: .15;
+			font-family: times,'Times New Roman',serif;
+			display: inline-block;
+			transform: translate(0.2em,0.5em);
+		}
+
     </style>
 
 </head>
@@ -80,21 +132,24 @@
         <!-- Main -->
         <div class="article-detail">
             <div class="btn">返回列表</div>
-            <p class="title">article 2</p>
-            <p class="date">2022.5.8</p>
-            <p class="text">
-				Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading
-				Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4
-				Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading
-				Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4
-				Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading
-				Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4
-				Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading
-				Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4
-				Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading
-				Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4
-				Heading Level 4 Heading Level 4 Heading Level 4
-			</p>
+			<p class="title">Sketch 多层阴影插件</p>
+			<p class="date">2018.9.5</p>
+			<p class="text">忘了哪一天看见方迟写的关于多层阴影模拟的回答 <a href="https://www.zhihu.com/question/28865209/answer/42385558" style="color:#5ef2ff;" target="_blank">《如何理解 Material Design 中卡片的两层阴影？》</a> 了，一直都觉得似乎可以更智能化，其实之前自己在做设计的时候也会用多层阴影来模拟，尤其是 CSS 里的 box-shadow 也支持多层阴影，但一般参数设置都是纯粹凭感觉。<br>如果真的完全按照数学公式来模拟的话，那阴影的参数到底应该怎么设置，按照我的计算，如果用三层阴影来模拟，那这三层的透明度并不是从外到内递增，反而应该用「小-大-小」才比较精确。具体看这个示意图： </p>
+			<br>
+			<img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/better-shadow-1.gif" width="1200" height="aoto">
+			<br>
+			<p class="text">使用不同的画图工具如Sketch和CSS来显示计算值的多层阴影效果， 在网页中的效果和之前单一阴影的对比是这样的： </p>
+			<br>
+			<img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/better-shadow-2.gif" width="1200" height="aoto">
+			<br>
+			<p class="text">好的地方在于多层阴影某些情况下确实可以模拟出非线性衰减的感觉，但缺点是多层带透明度的阴影叠加之后，尤其是层数比较多的情况下，色阶会比较明显。CSS 里的 box-shadow 可能是为了性能牺牲了一定的模糊质量（从参数的名字来看是应该是没有用高斯分布的模糊算法了），所以色阶会尤其突出，很多情况下基本层数超过 4 就没法看了。 </p>
+			<br>
+			<p class="text">因为 Sketch 里其实稍微还是可以看看，而且这个插件实现方法也不难，很多我 Demo 里用的 JS 都可以直接复用，所以还是把插件写出来了。</p>
+			<br>
+			<p class="text">下载地址：<a href="https://website-1313160582.cos.ap-beijing.myqcloud.com/download/Better-Shadow.sketchplugin.zip" style="color:#5ef2ff;" target="_blank">Better-Shadow.sketchplugin</a> ，插件里可以看到大部分的js写法。</p>
+			<br>
+			<p class="text">用法很简单，选中想要加阴影的图层，然后点击「插件」菜单栏里的「Better Shadow」，然后设置参数即可。<br>只要能加阴影的对象都可使用，包括形状、图片和文本（文本的阴影和原生一样，不支持 spread 参数）。<br>需要注意的是，阴影的颜色目前只支持 6 位的 HEX 颜色代码。</p>
+			
         </div>
 
 

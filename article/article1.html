@@ -12,52 +12,105 @@
 		.article-detail {
 			width: 1200px;
 			margin: 0 auto;
-			padding: 100px 20px 80px;
+			margin-bottom: 200px;
+			padding: 100px 0px 100px 0px;
 			color: #fff;
 			word-break: break-all;
 		}
 
 		.article-detail .title {
-			font-size: 2rem;
+			font-size: 3em;
 			word-break: break-all;
-			line-height: 3rem;
+			line-height: 3em;
 			font-family:'myFontH';
-			margin-top: 1.2rem;
-			margin-bottom: 1rem;
 			text-align: center;
 		}
 
 		.article-detail .date {
-			font-size: 1rem;
-			line-height: 1.6rem;
+			font-size: 1.2em;
+			line-height: 1.2em;
 			font-family:'myFontL';
 			opacity: 0.5;
 			text-align: center;
-			margin-bottom: 5rem;
+			margin-bottom: 4em;
 		}
 
 		.article-detail .text{
-			font-size: 1.1rem;
-			line-height: 2rem;
-			font-family:'myFont';
+			font-size: 1.1em;
+			line-height: 2em;
+			font-family:'myFontL';
 		}
 
 		.btn {
 			display: inline-block;
-			padding: 0.6rem 2rem;
+			padding: 0.6em 2em;
 			border:2px solid #fff;
 			border-color: #fff;
 			font-family:'myFont';
 			color:#fff;
 			cursor: url(/font/cursorlink.ico),pointer;
 			opacity: 0.8;
-			margin-bottom: 4rem;
+			margin-bottom: 4em;
 		}
 
 		.btn:hover {
 			/* box-shadow: 0 0 8px #fff; */
 			opacity: 1;
 		}
+
+		.quote{
+			margin: 0.25em 1.5em 0 0;
+		}
+
+		.quote::before{
+			content: "";
+			width: 35%;
+			display: block;
+			margin: 0 auto 1em;
+			height: 0;
+			border-top: 0.4em solid #152138;
+		}
+
+		.quote::after{
+			content: "";
+			width: 35%;
+			display: block;
+			margin: 2em auto 1em;
+			height: 0;
+			border-top: 0.4em solid #152138;
+		}
+
+		.quote-content{
+			display: block;
+			width: 90%;
+			text-align: center;
+			margin: 0 auto;
+			font-size: 1.4em;
+			line-height: 2em;
+			font-family: times,'Times New Roman',serif;
+			font-weight: 100;
+			opacity: 0.6;
+		}
+
+		.quote-content::before{
+			content: "“";
+			font-size: 4em;
+			opacity: .15;
+			font-family: times,'Times New Roman',serif;
+			display: inline-block;
+			transform: translate(-0.2em,0);
+		}
+
+		.quote-content::after{
+			content: "”";
+			font-size: 4em;
+			opacity: .15;
+			font-family: times,'Times New Roman',serif;
+			display: inline-block;
+			transform: translate(0.2em,0.5em);
+		}
+
+
 	</style>
 
 </head>
@@ -79,21 +132,32 @@
 		<!-- Main -->
 		<div class="article-detail">
 			<div class="btn">返回列表</div>
-			<p class="title">article 1</p>
-			<p class="date">2022.5.8</p>
-			<p class="text">
-				Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading
-				Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4
-				Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading
-				Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4
-				Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading
-				Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4
-				Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading
-				Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4
-				Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading
-				Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4
-				Heading Level 4 Heading Level 4 Heading Level 4
-			</p>
+			<p class="title">伪 3D 的 JS立体渲染引擎 Zdog</p>
+			<p class="date">2019.6.8</p>
+			<p class="text">最近两年伪 3D 的效果在世界范围内风靡了起来（2.5D的叫法总感觉好别扭），这两天有个「萌萌哒」的国外作者 <a href="https://desandro.com/" style="color:#5ef2ff;" target="_blank">David DeSandro</a> 开发了一个伪 3D 引擎 Zdog。说他「萌萌哒」是因为<a href="https://zzz.dog/" style="color:#5ef2ff;"target="_blank">这个引擎的官网</a> 设计、简介以及 <a href="https://zzz.dog/#about-zdog/" style="color:#5ef2ff;" target="_blank">Zdog 这个名字的由来</a> 都非常有意思~ 作者对 Zdog 的定义同样非常精简干练： </p>
+			<br>
+			<br>
+			<div class="quote">
+				<div class="quote-content">
+					Round, flat, designer-friendly pseudo-3D engine for canvas & SVG
+					<br>
+					圆头圆脑、纯平质感、对设计师友好的 canvas + SVG 伪 3D 引擎				
+				</div>
+			</div>
+			<br>
+			<br>
+			<p class="text">被官网范例所吸引去尝试了一下，确实如作者所说这个引擎的效果还是非常初阶的，因为 Zdog 是完全用 2D 对象投射到 3D 物体所在位置来渲染，所以 Z 轴层叠问题基本无解（当然官网也介绍了一些方法来缓解 Z-fighting）。但毕竟这就是一个未压缩也只有 28KB、不追求精确但求好玩的 JS 库，还要啥自行车呢~ <br>我试了下两个头像作为范例进行了简单尝试，效果如下~ </p>
+			<br>
+			<br>
+			<iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/hsu3allen/embed/jOzxWwv?default-tab=html%2Cresult&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+				See the Pen <a href="https://codepen.io/hsu3allen/pen/jOzxWwv">
+				Untitled</a> by Hsu3Allen (<a href="https://codepen.io/hsu3allen">@hsu3allen</a>)
+				on <a href="https://codepen.io">CodePen</a>.
+			  </iframe>
+			<br>
+			<br>
+			<p class="text">试用下来觉得确实还算对设计师友好，位移旋转变形基本上像是在写 CSS 和 SVG，绑定父对象、建组、动画之类的基础功能也都有，虽然支持的形状略少，建复杂模型不方便但还是可以玩一玩~ </p>
+			
 		</div>
 
 
