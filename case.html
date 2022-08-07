@@ -78,34 +78,55 @@
 
 
         <!-- Main -->
-        <div class="case-list-content">
-            <a class="link" href="./case/case1.html">
-                <div class="list">
-                    <img src="https://img2.baidu.com/it/u=339346403,305627179&fm=253&fmt=auto&app=120&f=JPEG?w=1280&h=800"
-                        alt="">
+            <div class="case-list-content">
+                <a class="link" href="./case/case1.html">
+                    <div class="list">
+                        <img src="https://img2.baidu.com/it/u=339346403,305627179&fm=253&fmt=auto&app=120&f=JPEG?w=1280&h=800"
+                            alt="">
 
-                    <p class="title">case 1</p>
-                    <p class="second-title">
-                        ergergergergewrgergergergergergergewrgergergergergergergewrgergergergergergergewrgergergergergergergewrgergergergergergergewrgergerg
-                    </p>
+                        <p class="title">case 1</p>
+                        <p class="second-title">
+                            ergergergergewrgergergergergergergewrgergergergergergergewrgergergergergergergewrgergergergergergergewrgergergergergergergewrgergerg
+                        </p>
 
-                </div>
-            </a>
-            <a class="link" href="./case/case1.html">
-                <div class="list">
-                    <img src="https://img2.baidu.com/it/u=339346403,305627179&fm=253&fmt=auto&app=120&f=JPEG?w=1280&h=800"
-                        alt="">
+                    </div>
+                </a>
+                <a class="link" href="./case/case1.html">
+                    <div class="list">
+                        <img src="https://img2.baidu.com/it/u=339346403,305627179&fm=253&fmt=auto&app=120&f=JPEG?w=1280&h=800"
+                            alt="">
 
-                    <p class="title">case 2</p>
-                    <p class="second-title">
-                        ergergergergewrgergergergergergergewrgergergergergergergewrgergergergergergergewrgergergergergergergewrgergergergergergergewrgergerg
-                    </p>
+                        <p class="title">case 2</p>
+                        <p class="second-title">
+                            ergergergergewrgergergergergergergewrgergergergergergergewrgergergergergergergewrgergergergergergergewrgergergergergergergewrgergerg
+                        </p>
 
-                </div>
-            </a>
-        </div>
+                    </div>
+                </a>
+            </div>
 
-
+        <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+			var fn = function () {
+				var w = document.body.clientWidth;
+				var rate = (w) / 1920
+				$(".wrapper").css({
+					zoom: rate
+				});
+			};
+			if (window.addEventListener) {
+				window.addEventListener("resize", function () {
+					fn();
+				});
+			} else if (window.attachEvent) {
+				window.attachEvent("onresize", function () {
+					fn();
+				});
+			}
+			fn();
+		});
+        </script>
     </div>
 
 </body>
