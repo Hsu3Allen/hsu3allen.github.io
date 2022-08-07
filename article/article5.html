@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>文章详情</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../css/main.css" />
+	<link rel="shortcut icon" href="../font/icon.ico" />
+	<link rel="icon" href="../font/icon.ico" type="image/ico" />
+
+    <style>
+        .article-detail {
+			width: 1200px;
+			margin: 0 auto;
+			margin-bottom: 200px;
+			padding: 100px 0px 100px 0px;
+			color: #fff;
+			word-break: break-all;
+		}
+
+		.article-detail .title {
+			font-size: 3em;
+			word-break: break-all;
+			line-height: 3em;
+			font-family:'myFontH';
+			text-align: center;
+		}
+
+		.article-detail .date {
+			font-size: 1.2em;
+			line-height: 1.2em;
+			font-family:'myFontL';
+			opacity: 0.5;
+			text-align: center;
+			margin-bottom: 4em;
+		}
+
+		.article-detail .text{
+			font-size: 1.1em;
+			line-height: 2em;
+			font-family:'myFontL';
+			opacity: 0.7;
+		}
+
+		.article-detail .textpro{
+			font-size: 1.8em;
+			line-height: 2.4em;
+			font-family: 'myFont';
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 0.6em 2em;
+			border:2px solid #fff;
+			border-color: #fff;
+			font-family:'myFont';
+			color:#fff;
+			cursor: url(/font/cursorlink.ico),pointer;
+			opacity: 0.8;
+			margin-bottom: 4em;
+		}
+
+		.btn:hover {
+			/* box-shadow: 0 0 8px #fff; */
+			opacity: 1;
+		}
+
+		.quote{
+			margin: 0.25em 1.5em 0 0;
+		}
+
+		.quote::before{
+			content: "";
+			width: 35%;
+			display: block;
+			margin: 0 auto 1em;
+			height: 0;
+			border-top: 0.4em solid #152138;
+		}
+
+		.quote::after{
+			content: "";
+			width: 35%;
+			display: block;
+			margin: 2em auto 1em;
+			height: 0;
+			border-top: 0.4em solid #152138;
+		}
+
+		.quote-content{
+			display: block;
+			width: 90%;
+			text-align: center;
+			margin: 0 auto;
+			font-size: 1.4em;
+			line-height: 2em;
+			font-family: times,'Times New Roman',serif;
+			font-weight: 100;
+			opacity: 0.6;
+		}
+
+		.quote-content::before{
+			content: "“";
+			font-size: 4em;
+			opacity: .15;
+			font-family: times,'Times New Roman',serif;
+			display: inline-block;
+			transform: translate(-0.2em,0);
+		}
+
+		.quote-content::after{
+			content: "”";
+			font-size: 4em;
+			opacity: .15;
+			font-family: times,'Times New Roman',serif;
+			display: inline-block;
+			transform: translate(0.2em,0.5em);
+		}
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Wrapper -->
+    <div class="wrapper article-list">
+        <!-- Header -->
+        <header id="header">
+            <a href="../index.html" class="logo"><span>AllenHsu</span></a>
+            <ul id="menu">
+                <li><a href="../index.html">首页</a></li>
+                <li><a class="active" href="../article.html">文章</a></li>
+                <li><a href="../case.html">案例</a></li>
+                <li><a href="../about.html">关于</a></li>
+            </ul>
+        </header>
+        <!-- Main -->
+        <div class="article-detail">
+            <div class="btn">返回列表</div>
+			<p class="title">大胆假设谨慎论证</p>
+			<p class="date">2019.02.07</p>
+			<p class="text">前几天一个小伙伴说了一个问题：</p>
+			<br>
+			<div class="quote">
+				<div class="quote-content">
+					来公司一年左右一直跟着一个产品，发现产品中有不少体验问题。但之前想推着pm解决体验设计问题特别难，和pm沟通没那么容易。很多体验问题就放在那儿那么明显，但是怎么就推不动呢？				
+				</div>
+			</div>
+			<br>
+			<br>
+			<p class="text">想想以前我也有过这样的困扰。辛辛苦苦做了几天的设计提案，满心欢喜的跑去分享，但 pm 似乎不那么重视，最后也就不了了之了。不过现在再问我遇到这种事怎么办，我想说，体验设计其实是一道证明题。大胆假设谨慎论证，剩下的只要从多方利益去衡量ROI就好很多了。</p>
+			<br>
+			<p class="text">大部分同学的着眼点都在做事上，考虑怎么把事情做好那当然是重要的，但只考虑怎么做好设计这件事，我敢保证结果不会太好。活越久你就越发现不是单纯设计做的好，就会有结果。复杂组织结构的大公司里，这个现象就更明显，为了完成一个目标，公司分成了3-6种职能，大家都是配合的关系。事情的结果可不是你一个环节有好产出就能直接导向的。但是如果你能把其他决策职能的认知和你拉到同一水平线呢？如果你能成功证明你的设计观点就是当前对他们有利的呢？</p>
+			<br>
+			<p class="textpro">首先你要知道自己该证明哪些内容？</p>
+			<br>
+			<p class="text">1.证明体验设计的问题真的存在<br>2.证明问题真的是团队的重要问题<br>3.证明你的设计是好的<br>4.证明你的设计真的起效果</p>
+			<br>
+			<br>
+			<p class="textpro">证明体验问题真的存在？</p>
+			<br>
+			<p class="text">大部分设计师常会说，我要改a/b/c。你有没耐下心来给人解释过你为什么要改？你说的问题真的是问题吗？常用的证明方法真的很常见：首先是用户反馈，真实的用户反馈，是最有发言权的；比用户的语言更可靠的是行为的数据记录。已经上线的产品后，你可以拿到大把的用户行为数据，比如某个切换入口用户是否如预期频繁点击？再者，通过和竞品的体验对比，也可以定性的说明体验的问题。</p>
+			<br>
+			<br>
+			<p class="textpro">证明你所提的问题真的是团队的重要问题？</p>
+			<br>
+			<p class="text">这一步可能会是绝大多数设计师不去考虑的点。想当初我也没仔细考虑。举个简单的例子，当前如果产品正忙着上线某一重要功能，你却给 pm 说:我们的产品内的动效太low了，不高大上，我觉得特别有必要优化。那么请问"为什么动效目前对产品特别重要？"你是否有真正仔细的思考过，并123给 pm 讲清楚呢？证明你所提的问题对团队重要性的方法也很常见：
+			<br>
+			首先匹配产品的规划，如果今年的产品规划就是做社交化，你提的恰好又是社交化方面的问题。你说 pm 哪能不重视，至少得竖起耳朵先听一听吧。再者，匹配产品的kpi，如果kpi就是分享的指标达到某一数值，你所提到的体验问题正好直指这一问题。那 pm 还不听听你的意见？再者，结果要为可被量化为产品的数据的，例如某一子功能的点击量或者使用频率可能在设计优化后有所提升，让用户的活跃度增加。
+			<br>
+			如果以上三个都不是，你也不能通过其他角度很好的正面回答这个问题。那么可能你所提的体验优化问题，真的不是当前值得深究的问题。（不过不排除会是产品发展其他阶段的重要问题）
+			<br>
+			<br>
+			</p>
+			<p class="textpro">证明你的设计是好的？</p>
+			<p class="text">讲清楚你的设计思路，只说设计结果的设计师都是耍流氓。你的设计怎么来的，有什么优势，把这些内容清楚的传达给其他人，才有可能获得他人的认同。只说设计结果，很容易受到质疑。同时要分析预估可能收益，不要太夸张，用你现有的能力和知识水平去画一块可预见的大饼。demo的用研测试既然是体验类问题，做一个demo去找用户测试，能得到最真实直接的反馈。也便于大家去做判断。</p>
+			<br>
+			<br>
+			<p class="textpro">证明你的设计起效果？</p>
+			<p class="text">假设了那就要验证结果，可以看用户反馈、看行为数据、看产品数据。总有一项能证明你的设计起效果。要是一个也找不见，那说明你之前那么执着的体验优化，也许其实真的没有你开始想的那么重要。以后还要更加谨慎。还要记得，如果你找到了设计起效果的证明。记得分享给配合你一起完成体验优化的小伙伴，让大家也觉得自己做了一件有意义的事情。这绝对有利于下一次的合作愉快啊！</p>
+			<br>
+			
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".btn").click(function () {
+				window.location = "../article.html"
+			})
+		})
+	</script>
+	<script>
+		$("#audio_btn").click(function () {
+			var music = document.getElementById("music");
+			if (music.paused) {
+				music.play();
+				$("#music_btn").attr("src", "font/musicoff.png");
+			} else {
+				music.pause();
+				$("#music_btn").attr("src", "font/musicon.png");
+			}
+		});
+
+		function playPause() {
+			var music = document.getElementById('music2');
+			var music_btn = document.getElementById('music_btn2');
+			if (music.paused) {
+				music.play();
+				music_btn.src = 'font/musicoff.png';
+			} else {
+				music.pause();
+				music_btn.src = 'font/musicon.png';
+			};
+		};
+		$(document).ready(function () {
+			var fn = function () {
+				var w = document.body.clientWidth;
+				var rate = (w) / 1980
+				$(".wrapper").css({
+					zoom: rate
+				});
+			};
+			if (window.addEventListener) {
+				window.addEventListener("resize", function () {
+					fn();
+				});
+			} else if (window.attachEvent) {
+				window.attachEvent("onresize", function () {
+					fn();
+				});
+			}
+			fn();
+		});
+	</script>
+
+
+</body>
+
+</html>
