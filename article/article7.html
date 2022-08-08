@@ -1,0 +1,327 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>文章详情</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../css/main.css" />
+	<link rel="shortcut icon" href="../font/icon.ico" />
+	<link rel="icon" href="../font/icon.ico" type="image/ico" />
+
+    <style>
+        .article-detail {
+			width: 1000px;
+			margin: 0 auto;
+			margin-bottom: 200px;
+			padding: 100px 0px 100px 0px;
+			color: #fff;
+			word-break: break-all;
+		}
+
+		.article-detail .title {
+			font-size: 3em;
+			word-break: break-all;
+			line-height: 3em;
+			font-family:'myFontH';
+			text-align: center;
+		}
+
+		.article-detail .date {
+			font-size: 1.2em;
+			line-height: 1.2em;
+			font-family:'myFontL';
+			opacity: 0.5;
+			text-align: center;
+			margin-bottom: 4em;
+		}
+
+		.article-detail .text{
+			font-size: 1.1em;
+			line-height: 2em;
+			font-family:'myFontL';
+			opacity: 0.7;
+		}
+
+		.article-detail .textpro{
+			font-size: 1.8em;
+			line-height: 2.4em;
+			font-family: 'myFont';
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 0.6em 2em;
+			border:2px solid #fff;
+			border-color: #fff;
+			font-family:'myFont';
+			color:#fff;
+			cursor: url(/font/cursorlink.ico),pointer;
+			opacity: 0.8;
+			margin-bottom: 4em;
+		}
+
+		.btn:hover {
+			/* box-shadow: 0 0 8px #fff; */
+			opacity: 1;
+		}
+
+		.quote{
+			margin: 0.25em 1.5em 0 0;
+		}
+
+		.quote::before{
+			content: "";
+			width: 35%;
+			display: block;
+			margin: 0 auto 1em;
+			height: 0;
+			border-top: 0.4em solid #152138;
+		}
+
+		.quote::after{
+			content: "";
+			width: 35%;
+			display: block;
+			margin: 2em auto 1em;
+			height: 0;
+			border-top: 0.4em solid #152138;
+		}
+
+		.quote-content{
+			display: block;
+			width: 90%;
+			text-align: center;
+			margin: 0 auto;
+			font-size: 1.4em;
+			line-height: 2em;
+			font-family: times,'Times New Roman',serif;
+			font-weight: 100;
+			opacity: 0.6;
+		}
+
+		.quote-content::before{
+			content: "“";
+			font-size: 4em;
+			opacity: .15;
+			font-family: times,'Times New Roman',serif;
+			display: inline-block;
+			transform: translate(-0.2em,0);
+		}
+
+		.quote-content::after{
+			content: "”";
+			font-size: 4em;
+			opacity: .15;
+			font-family: times,'Times New Roman',serif;
+			display: inline-block;
+			transform: translate(0.2em,0.5em);
+		}
+
+    </style>
+
+</head>
+
+<body>
+	
+	<!-- Wrapper -->
+	<div class="wrapper">
+		<!-- Header -->
+		<header id="header">
+            <a href="../index.html" class="logo"><span>AllenHsu</span></a>
+            <ul id="menu">
+                <li><a href="../index.html">首页</a></li>
+                <li><a class="active" href="../article.html">文章</a></li>
+                <li><a href="../case.html">案例</a></li>
+                <li><a href="../about.html">关于</a></li>
+            </ul>
+        </header>
+        <!-- Main -->
+        <div class="article-detail">
+            <div class="btn">返回列表</div>
+			<p class="title">装逼指南杂话</p>
+			<p class="date">2019.05.01</p>
+			<p class="text">看到一个国外设计师 Pablo Stanley 的文章：<a href="https://thedesignteam.io/how-to-pretend-youre-a-great-designer-3625de90d79f#.4jzljybjr" style="color:#5ef2ff;" target="_blank">《How to pretend you’re a great designer》</a>，翻译过来也可以理解为 “设计师装逼指南”，每一条都配了插画，画得可爱爆炸。就当是自我调侃开开玩笑哈哈哈。</p>
+			<br>
+			<br>
+			<div class="quote">
+				<div class="quote-content">
+					NO.1 —— 活用「愉悦」这个词
+				</div>
+			</div>
+			<p class="text">别人嫌弃你的设计太花哨？动效太繁琐？直接把「愉悦」这个词丢他脸上，还不行就再丢一张马斯洛需求层次的图，准行！</p>
+			<br>
+			<br>
+			<img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/pretend1.gif" width="1000" height="aoto">
+			<br>
+			<br>
+			<br>
+			<div class="quote">
+				<div class="quote-content">
+					NO.2 —— 能说鸟语就不说人话
+				</div>
+			</div>
+			<p class="text">虽然设计师的责任是把东西做得易于理解，但是在给客户推销你的设计的时候尽量丢一些专业词汇，越复杂越好！万一客户深究这些名词了怎么办？继续抛第二层次的专业术语，请牢牢记着这些词「品牌价值」、「情境化设计」、「同理心」等</p>
+			<br>
+			<br>
+			<img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/pretend2.gif" width="1000" height="aoto">
+			<br>
+			<br>
+			<br>
+			<div class="quote">
+				<div class="quote-content">
+					NO.3 —— 统一性是你的至高原则
+				</div>
+			</div>
+			<p class="text">当你想偷懒的时候，当你只想复制粘贴的时候，「统一性至上」是你最好的借口！</p>
+			<br>
+			<br>
+			<img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/pretend3.gif" width="1000" height="aoto">
+			<br>
+			<br>
+			<br>
+			<div class="quote">
+				<div class="quote-content">
+					NO.4 —— 美观性永远高于功能性
+				</div>
+			</div>
+			<p class="text">管他实用不实用，做得好看最要紧！</p>
+			<br>
+			<br>
+			<img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/pretend4.gif" width="1000" height="aoto">
+			<br>
+			<br>
+			<br>
+			<div class="quote">
+				<div class="quote-content">
+					NO.5 —— 要学(chao)就学(chao)最好的
+				</div>
+			</div>
+			<p class="text">当你想不出怎么设计的时候，就抄最经典的！别人问起来你就说这个已经是经过市场考验了的！</p>
+			<br>
+			<br>
+			<img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/pretend5.gif" width="1000" height="aoto">
+			<br>
+			<br>
+			<br>
+			<div class="quote">
+				<div class="quote-content">
+					NO.6 —— 用研是个很好的武器
+				</div>
+			</div>
+			<p class="text">当你要说服别人的时候最好设(wei)计(zao)出一些漂亮的数据，并且做一页精美的 PPT 出来，万一别人说想看下原始数据？那就说这个比较敏感，会后私下沟通给你看，然后躲着这个人。</p>
+			<br>
+			<br>
+			<img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/pretend6.gif" width="1000" height="aoto">
+			<br>
+			<br>
+			<br>
+			<div class="quote">
+				<div class="quote-content">
+					NO.7 —— 让别人觉得你很忙
+				</div>
+			</div>
+			<p class="text">这一条大家都懂！装 Bi 从工位开始，多打印一些竞品的界面、之前做的飞机稿然后贴到工位上，效果 gang gang 滴！</p>
+			<br>
+			<br>
+			<img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/pretend7.gif" width="1000" height="aoto">
+			<br>
+			<br>
+			<br>
+			<div class="quote">
+				<div class="quote-content">
+					NO.8 —— 插入图表的时候尽量选那些模棱两可的
+				</div>
+			</div>
+			<p class="text">当大家看到你那个不知所云但又不明觉厉的图表的时候，他们只会微微点头并且为你高超的概念抽象能力折服！</p>
+			<br>
+			<br>
+			<img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/pretend8.gif" width="1000" height="aoto">
+			<br>
+			<br>
+			<br>
+			<div class="quote">
+				<div class="quote-content">
+					NO.9 —— 反复强调「以用户为中心」
+				</div>
+			</div>
+			<p class="text">如果你从来没说过「以用户为中心」这个词，你还算设计师吗？管他这个词到底啥意思，反正总是挂在嘴边就对了！</p>
+			<br>
+			<br>
+			<img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/pretend9.gif" width="1000" height="aoto">
+			<br>
+			<br>
+			<br>
+			<div class="quote">
+				<div class="quote-content">
+					NO.10 —— 反我就是用户，用户就是我
+				</div>
+			</div>
+			<p class="text">上一条是狗屁！其实我们的设计是以「我」为中心的，别人假如不服来辩，那就直截了当告诉他，「我」自己就是我们这个产品的用户啊，我很了解我们的用户啊，我怎么会不了解我自己呢？所以只要我用了开心就好了嘛！</p>
+			<br>
+			<br>
+			<img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/pretend10.gif" width="1000" height="aoto">
+			<br>
+			<br>
+			
+			
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".btn").click(function () {
+				window.location = "../article.html"
+			})
+		})
+	</script>
+	<script>
+		$("#audio_btn").click(function () {
+			var music = document.getElementById("music");
+			if (music.paused) {
+				music.play();
+				$("#music_btn").attr("src", "font/musicoff.png");
+			} else {
+				music.pause();
+				$("#music_btn").attr("src", "font/musicon.png");
+			}
+		});
+
+		function playPause() {
+			var music = document.getElementById('music2');
+			var music_btn = document.getElementById('music_btn2');
+			if (music.paused) {
+				music.play();
+				music_btn.src = 'font/musicoff.png';
+			} else {
+				music.pause();
+				music_btn.src = 'font/musicon.png';
+			};
+		};
+		$(document).ready(function () {
+			var fn = function () {
+				var w = document.body.clientWidth;
+				var rate = (w) / 1980
+				$(".wrapper").css({
+					zoom: rate
+				});
+			};
+			if (window.addEventListener) {
+				window.addEventListener("resize", function () {
+					fn();
+				});
+			} else if (window.attachEvent) {
+				window.attachEvent("onresize", function () {
+					fn();
+				});
+			}
+			fn();
+		});
+	</script>
+
+
+</body>
+
+</html>
