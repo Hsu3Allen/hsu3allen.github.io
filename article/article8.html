@@ -43,6 +43,12 @@
 			opacity: 0.7;
 		}
 
+		.article-detail .textpro{
+			font-size: 1.8em;
+			line-height: 2.4em;
+			font-family: 'myFont';
+		}
+
 		.btn {
 			display: inline-block;
 			padding: 0.6em 2em;
@@ -133,25 +139,55 @@
         <!-- Main -->
         <div class="article-detail">
             <div class="btn">返回列表</div>
-			<p class="title">Sketch 多层阴影插件</p>
-			<p class="date">2018.09.05</p>
-			<p class="text">那天看见方迟写的关于多层阴影模拟的回答 <a href="https://www.zhihu.com/question/28865209/answer/42385558" style="color:#5ef2ff;" target="_blank">《如何理解 Material Design 中卡片的两层阴影？》</a> ，一直都觉得似乎可以更智能化，其实之前自己在做设计的时候也会用多层阴影来模拟，尤其是 CSS 里的 box-shadow 也支持多层阴影，但一般参数设置都是纯粹凭感觉。<br>如果真的完全按照数学公式来模拟的话，三层阴影的透明度并不是从外到内递增，反而应该用「小-大-小」才比较精确。具体看这个示意图： </p>
+			<p class="title">Medium 换 Logo 啦</p>
+			<p class="date">2017.08.25</p>
+			<p class="text">Medium 换 Logo啦，长这样：</p>
 			<br>
-			<img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/better-shadow-1.gif" width="1000" height="aoto">
 			<br>
-			<p class="text">使用不同的画图工具如Sketch和CSS来显示计算值的多层阴影效果， 在网页中的效果和之前单一阴影的对比是这样的： </p>
+			<img src=" https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/medium1.png" width="1000" height="aoto">
 			<br>
-			<img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/better-shadow-2.gif" width="1000" height="aoto">
 			<br>
-			<p class="text">好的地方在于多层阴影某些情况下确实可以模拟出非线性衰减的感觉，但缺点是多层带透明度的阴影叠加之后，尤其是层数比较多的情况下，色阶会比较明显。CSS 里的 box-shadow 可能是为了性能牺牲了一定的模糊质量（从参数的名字来看是应该是没有用高斯分布的模糊算法了），所以色阶会尤其突出，很多情况下基本层数超过 4 就没法看了。 </p>
+			<p class="text">可能对于关注设计师和Medium的用户们来说，对 Medium 印象最深的一次改版是下面这个。这个在 2015 年为 Medium 创造的 Logo 在后面看来是成功的，Medium 当时花了很大力气去宣传，那为什么在 Medium 使用了它将近 2 年后选择换掉这个 Logo 呢？先让我们先来看下 Medium 上一次 Logo 改版的原因。</p>
 			<br>
-			<p class="text">Sketch 里已经出现了类似的插件 <a href="https://website-1313160582.cos.ap-beijing.myqcloud.com/download/Better-Shadow.sketchplugin.zip" style="color:#5ef2ff;" target="_blank"> Better-Shadow.sketchplugin </a> ，插件里可以看到大部分的js写法。</p>
 			<br>
-			<p class="text">用法很简单，选中想要加阴影的图层，然后点击「插件」菜单栏里的「Better Shadow」，然后设置参数即可。<br>只要能加阴影的对象都可使用，包括形状、图片和文本（文本的阴影和原生一样，不支持 spread 参数）。<br>需要注意的是，阴影的颜色目前只支持 6 位的 HEX 颜色代码。</p>
-			
+			<img src=" https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/medium2.png" width="1000" height="aoto">
+			<br>
+			<br>
+			<p class="text"><br>最初在 Medium 首次上线测试版的时候是一个这样的 Logo，简单，优雅，有力量。</p>
+			<br>
+			<br>
+			<img src=" https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/medium3.png" width="1000" height="aoto">
+			<br>
+			<br>
+			<p class="text">后来随着 Medium 逐渐成熟起来后，这个 Logo 显得不够有亲和力，Medium 需要有情感上传达的改变，所以一个新的品牌形象便提上了日程。</p>
+			<br>
+			<br>
+			<img src=" https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/medium4.png" width="1000" height="aoto">
+			<br>
+			<br>
+			<p class="text">在经过不断的尝试和探索后，Medium 最终完成一个有趣，年轻化的 Logo。而结果就是可以看到的：在这两年间越来越多的高质量的作者涌入 Medium，创造出了高质量的文章，形成了一个良性的生态环境。</p>
+			<br>
+			<br>
+			<img src=" https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/medium5.png" width="1000" height="aoto">
+			<br>
+			<br>
+			<p class="text">不过现在为什么又迭代了新的品牌形象呢？<br>
+			Medium 网站本身的设计是强调信息本身的，以内容为主，保持简洁与可读性，随着 Medium 渡过了品牌宣传和增长期，从对用户数量的增长要求转变为对高质量用户和内容的要求。泛娱乐化的内容可以为网站带来更多的用户和流量，但是产生的真正价值却是有限的。<br>
+			对于 Medium 这样的协作型的媒体平台来说，最重要的就是能源源不断的产生高质量的内容，也就是信息本身，如果平台本身不加以限制而内容导向逐渐娱乐化，信息本身就失去了促使人独立思考的价值。<br>
+			所以 Medium 用品牌形象的转变告诉大家：“我们给大家提供的是高价值、高质量的内容”。</p>
+			<br>
+			<br>
+			<img src=" https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/medium6.png" width="1000" height="aoto">
+			<br>
+			<br>
+			<p class="text">所以我们再看新的 Logo，可以明显的看到它一方面采用了优雅的衬线体，让人感到严肃的同时也不失现代感，另一方面紧凑的间距也让Logo的结构显得更加的稳定与严谨，同时去掉了色彩代表着更关注内容而不是形式。
+			<br><br>拭目以待吧。</p>
+
+
         </div>
     </div>
-	<!-- Scripts -->
+
+    <!-- Scripts -->
     <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
@@ -203,6 +239,7 @@
 			fn();
 		});
 	</script>
+
 
 </body>
 
