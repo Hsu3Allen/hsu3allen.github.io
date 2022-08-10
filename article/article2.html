@@ -135,19 +135,6 @@
             <div class="btn">返回列表</div>
 			<p class="title">Sketch 多层阴影插件</p>
 			<p class="date">2018.09.05</p>
-			<p class="text">那天看见方迟写的关于多层阴影模拟的回答 <a href="https://www.zhihu.com/question/28865209/answer/42385558" style="color:#5ef2ff;" target="_blank">《如何理解 Material Design 中卡片的两层阴影？》</a> ，一直都觉得似乎可以更智能化，其实之前自己在做设计的时候也会用多层阴影来模拟，尤其是 CSS 里的 box-shadow 也支持多层阴影，但一般参数设置都是纯粹凭感觉。<br>如果真的完全按照数学公式来模拟的话，三层阴影的透明度并不是从外到内递增，反而应该用「小-大-小」才比较精确。具体看这个示意图： </p>
-			<br>
-			<img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/better-shadow-1.gif" width="1000" height="aoto">
-			<br>
-			<p class="text">使用不同的画图工具如Sketch和CSS来显示计算值的多层阴影效果， 在网页中的效果和之前单一阴影的对比是这样的： </p>
-			<br>
-			<img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/better-shadow-2.gif" width="1000" height="aoto">
-			<br>
-			<p class="text">好的地方在于多层阴影某些情况下确实可以模拟出非线性衰减的感觉，但缺点是多层带透明度的阴影叠加之后，尤其是层数比较多的情况下，色阶会比较明显。CSS 里的 box-shadow 可能是为了性能牺牲了一定的模糊质量（从参数的名字来看是应该是没有用高斯分布的模糊算法了），所以色阶会尤其突出，很多情况下基本层数超过 4 就没法看了。 </p>
-			<br>
-			<p class="text">Sketch 里已经出现了类似的插件 <a href="https://website-1313160582.cos.ap-beijing.myqcloud.com/download/Better-Shadow.sketchplugin.zip" style="color:#5ef2ff;" target="_blank"> Better-Shadow.sketchplugin </a> ，插件里可以看到大部分的js写法。</p>
-			<br>
-			<p class="text">用法很简单，选中想要加阴影的图层，然后点击「插件」菜单栏里的「Better Shadow」，然后设置参数即可。<br>只要能加阴影的对象都可使用，包括形状、图片和文本（文本的阴影和原生一样，不支持 spread 参数）。<br>需要注意的是，阴影的颜色目前只支持 6 位的 HEX 颜色代码。</p>
 			
         </div>
     </div>
@@ -207,3 +194,4 @@
 </body>
 
 </html>
+
