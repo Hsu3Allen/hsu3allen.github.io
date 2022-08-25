@@ -132,7 +132,9 @@
 		</header>
 		<!-- Main -->
 		<div class="article-detail">
-			<div class="btn">返回列表</div>
+			<div class="btn">
+				<a href="../article.html" style="color: #fff;">返回列表</a>
+			</div>
 			<p class="title">2.5D 的 js 渲染引擎 Zdog</p>
 			<p class="date">2019.06.08</p>
 			<p class="text">随着伪 3D 的效果在世界范围内风靡（也叫2.5D ），这两天我看到有个的国外设计师 <a href="https://desandro.com/" style="color:#5ef2ff;" target="_blank">David DeSandro</a> 开发了一个<a href="https://zzz.dog/" style="color:#5ef2ff;"target="_blank">引擎 Zdog</a> ，这个是引擎 Zdog <a href="https://zzz.dog/#about-zdog/" style="color:#5ef2ff;" target="_blank">这个名字的由来</a> 都非常有意思，作者对 Zdog 的定义是这样说的： </p>
@@ -164,13 +166,6 @@
 
 	<!-- Scripts -->
 	<script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$(".btn").click(function () {
-				window.location = "../article.html"
-			})
-		})
-	</script>
 	<script>
 		$("#audio_btn").click(function () {
 			var music = document.getElementById("music");

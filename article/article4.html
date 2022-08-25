@@ -138,7 +138,9 @@
         </header>
         <!-- Main -->
         <div class="article-detail">
-            <div class="btn">返回列表</div>
+            <div class="btn">
+				<a href="../article.html" style="color: #fff;">返回列表</a>
+			</div>
 			<p class="title">关于竞品分析的一点想法</p>
 			<p class="date">2018.11.12</p>
 			<p class="text">
@@ -183,13 +185,6 @@
 
     <!-- Scripts -->
     <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$(".btn").click(function () {
-				window.location = "../article.html"
-			})
-		})
-	</script>
 	<script>
 		$("#audio_btn").click(function () {
 			var music = document.getElementById("music");

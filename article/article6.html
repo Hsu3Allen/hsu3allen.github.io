@@ -138,7 +138,9 @@
         </header>
         <!-- Main -->
         <div class="article-detail">
-            <div class="btn">返回列表</div>
+            <div class="btn">
+				<a href="../article.html" style="color: #fff;">返回列表</a>
+			</div>
 			<p class="title">聊聊 Design Sprint 设计冲刺</p>
 			<p class="date">2019.04.17</p>
 			<p class="text">Design Sprint 是一套用于解决难题的五天式产品设计方法，集思考、设计、分析、产品原型产出为一体，简化和加速产品设计过程，让产品能够快速去满足用户的真实需求。它最开始是由 Google 内部（其实是Google Venture，Google 投资的一家类似的咨询公司）梳理的一套如何带领团队快速做创新设计并验证设计的基本流程。官方文档<a href="https://designsprintkit.withgoogle.com/" style="color:#5ef2ff;" target="_blank">《New Form Factors Sprint Playbook》</a>总结了 Design Sprint 操作执行的要点和中间过程可用的方法，在国内已经有很多公司都已经有在使用，关于它的文章也不胜枚举。在具体的实践中，其实还是会因为不同的工作环境，让方法论的实现，遇到不同的挑战与困惑。</p>
@@ -266,13 +268,6 @@
 
     <!-- Scripts -->
     <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$(".btn").click(function () {
-				window.location = "../article.html"
-			})
-		})
-	</script>
 	<script>
 		$("#audio_btn").click(function () {
 			var music = document.getElementById("music");
