@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>文章详情</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../css/main.css" />
+	<link rel="shortcut icon" href="../font/icon.ico" />
+	<link rel="icon" href="../font/icon.ico" type="image/ico" />
+
+    <style>
+
+        .article-detail {
+			width: 1000px;
+			margin: 0 auto;
+			margin-bottom: 200px;
+			padding: 100px 0px 100px 0px;
+			color: #fff;
+			word-break: break-all;
+		}
+
+		.article-detail .title {
+			font-size: 3em;
+			word-break: break-all;
+			line-height: 3em;
+			font-family:'myFontH';
+			text-align: center;
+		}
+
+		.article-detail .date {
+			font-size: 1.2em;
+			line-height: 1.2em;
+			font-family:'myFontL';
+			opacity: 0.5;
+			text-align: center;
+			margin-bottom: 4em;
+		}
+
+		.article-detail .text{
+			font-size: 1.1em;
+			line-height: 2em;
+			font-family:'myFontL';
+			opacity: 0.7;
+		}
+
+		.article-detail .textpro{
+			font-size: 1.8em;
+			line-height: 2.4em;
+			font-family: 'myFont';
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 0.6em 2em;
+			border:2px solid #fff;
+			border-color: #fff;
+			font-family:'myFont';
+			color:#fff;
+			cursor: url(/font/cursorlink.ico),pointer;
+			opacity: 0.8;
+			margin-bottom: 4em;
+		}
+
+		.btn:hover {
+			/* box-shadow: 0 0 8px #fff; */
+			opacity: 1;
+		}
+
+		.quote{
+			margin: 0.25em 1.5em 0 0;
+		}
+
+		.quote::before{
+			content: "";
+			width: 35%;
+			display: block;
+			margin: 0 auto 1em;
+			height: 0;
+			border-top: 0.4em solid #152138;
+		}
+
+		.quote::after{
+			content: "";
+			width: 35%;
+			display: block;
+			margin: 2em auto 1em;
+			height: 0;
+			border-top: 0.4em solid #152138;
+		}
+
+		.quote-content{
+			display: block;
+			width: 90%;
+			text-align: center;
+			margin: 0 auto;
+			font-size: 1.4em;
+			line-height: 2em;
+			font-family: times,'Times New Roman',serif;
+			font-weight: 100;
+			opacity: 0.6;
+		}
+
+		.quote-content::before{
+			content: "“";
+			font-size: 4em;
+			opacity: .15;
+			font-family: times,'Times New Roman',serif;
+			display: inline-block;
+			transform: translate(-0.2em,0);
+		}
+
+		.quote-content::after{
+			content: "”";
+			font-size: 4em;
+			opacity: .15;
+			font-family: times,'Times New Roman',serif;
+			display: inline-block;
+			transform: translate(0.2em,0.5em);
+		}
+
+    </style>
+
+</head>
+
+<body>
+	
+	<!-- Wrapper -->
+	<div class="wrapper">
+		<!-- Header -->
+		<header id="header">
+            <a href="../index.html" class="logo"><span>AllenHsu</span></a>
+            <ul id="menu">
+                <li><a href="../index.html">首页</a></li>
+                <li><a class="active" href="../article.html">文章</a></li>
+                <li><a href="../case.html">案例</a></li>
+                <li><a href="../about.html">关于</a></li>
+            </ul>
+        </header>
+        <!-- Main -->
+        <div class="article-detail">
+            <div class="btn">
+				<a href="../article.html" style="color: #fff;">返回列表</a>
+			</div>
+			<p class="title">细节推荐-网易交互自查表</p>
+			<p class="date">2019.08.24</p>
+			<p class="text">
+				在头痛一个跨平台交互出现的问题，刚好看到网易的这个交互自查表，看到了之后直接上手对照了一遍环境和硬件的条件设置。<br>不得不说，细节真的不错，值得细品。<br><br>
+				<img src=" https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/checksheet.png" width="1000" height="aoto">
+			</p><br><br>
+			
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+	<script>
+		$("#audio_btn").click(function () {
+			var music = document.getElementById("music");
+			if (music.paused) {
+				music.play();
+				$("#music_btn").attr("src", "font/musicoff.png");
+			} else {
+				music.pause();
+				$("#music_btn").attr("src", "font/musicon.png");
+			}
+		});
+
+		function playPause() {
+			var music = document.getElementById('music2');
+			var music_btn = document.getElementById('music_btn2');
+			if (music.paused) {
+				music.play();
+				music_btn.src = 'font/musicoff.png';
+			} else {
+				music.pause();
+				music_btn.src = 'font/musicon.png';
+			};
+		};
+		$(document).ready(function () {
+			var fn = function () {
+				var w = document.body.clientWidth;
+				var rate = (w) / 1980
+				$(".wrapper").css({
+					zoom: rate
+				});
+			};
+			if (window.addEventListener) {
+				window.addEventListener("resize", function () {
+					fn();
+				});
+			} else if (window.attachEvent) {
+				window.attachEvent("onresize", function () {
+					fn();
+				});
+			}
+			fn();
+		});
+	</script>
+		
+
+
+</body>
+
+</html>
