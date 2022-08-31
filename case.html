@@ -50,6 +50,12 @@
             word-break: break-all;
         }
 
+        .case-list-content .title .child{
+            background: linear-gradient(to right, #633bff, rgb(246, 113, 255));
+			-webkit-background-clip: text;
+			color: transparent;
+        }
+
         .case-list-content .second-title {
             font-size: 1em;
             font-family:'myFontL';
@@ -80,10 +86,21 @@
 
         <!-- Main -->
             <div class="case-list-content">
+                <a class="link" href="./case/case5.html">
+                    <div class="list">
+                        <img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/osicP0.png" alt="">
+                        <p class="title">分享展示-osic医生工作平台</p>
+                        <p class="second-title">
+                            分享osic医生工作平台的改版成果，项目历经2年，完成了功能及界面的全面升级。
+                        </p>
+                    </div>
+                </a>
                 <a class="link" href="./case/case4.html">
                     <div class="list">
                         <img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/exchangeP0.png" alt="">
-                        <p class="title">医疗交班工具体验设计</p>
+                        <p class="title">
+                            <a class="child">体验设计</a>-医疗交班工具MVP
+                        </p>
                         <p class="second-title">
                             医疗交班功能历经2个月的时间完成MVP设计，并在最后的测试中取得不错的反馈。
                         </p>
@@ -92,16 +109,29 @@
                 <a class="link" href="./case/case3.html">
                     <div class="list">
                         <img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/orderP0.png" alt="">
-                        <p class="title">医嘱功能提效优化</p>
+                        <p class="title">
+                            <a class="child">体验设计</a>-医嘱功能提效优化
+                        </p>
                         <p class="second-title">
                             医嘱功能经过查找、添加功能的体验优化，提升了整体使用效率，并在用户体验度量中满意度和易用性得到明显提高。
+                        </p>
+                    </div>
+                </a>
+                <a class="link" href="./case/case6.html">
+                    <div class="list">
+                        <img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/ukerP0.png" alt="">
+                        <p class="title">分享展示-uker旅游B2B销售平台</p>
+                        <p class="second-title">
+                            uker平台历经差不多1年的时间完成了品牌升级，体验评分获得了不错的分数。
                         </p>
                     </div>
                 </a>
                 <a class="link" href="./case/case2.html">
                     <div class="list">
                         <img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/inputP0.png" alt="">
-                        <p class="title">优化用户信息填写方案</p>
+                        <p class="title">
+                            <a class="child">体验设计</a>-优化用户信息填写方案
+                        </p>
                         <p class="second-title">
                             优化现有用户信息填写环节在产品设计上的交互路径及体验，帮助分销商自行完成预期订单填写目标。
                         </p>
@@ -110,7 +140,9 @@
                 <a class="link" href="./case/case1.html">
                     <div class="list">
                         <img src="https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/p0.png" alt="">
-                        <p class="title">商品推荐机制优化</p>
+                        <p class="title">
+                            <a class="child">体验设计</a>-优化商品推荐机制
+                        </p>
                         <p class="second-title">
                             商品推荐项目让供应商更主动、更有宣传力地将目标产品推送给二级分销商，为供应商带来更多的赚钱机会。
                         </p>
@@ -122,24 +154,52 @@
     <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-        var fn = function () {
-            var w = document.body.clientWidth;
-            var rate = (w) / 1920
-            $(".wrapper").css({
-                zoom: rate
-            });
-        };
-        if (window.addEventListener) {
-            window.addEventListener("resize", function () {
-                fn();
-            });
-        } else if (window.attachEvent) {
-            window.attachEvent("onresize", function () {
-                fn();
-            });
-        }
-        fn();
-    });
+            var fn = function () {
+                var w = document.body.clientWidth;
+                var rate = (w) / 1920
+                $(".wrapper").css({
+                    zoom: rate
+                });
+            };
+            if (window.addEventListener) {
+                window.addEventListener("resize", function () {
+                    fn();
+                });
+            } else if (window.attachEvent) {
+                window.attachEvent("onresize", function () {
+                    fn();
+                });
+            }
+            fn();
+        });
+
+
+		$(function(){
+			window.onbeforeunload = function () { 
+			    var scrollPos; 
+			    if (typeof window.pageYOffset != 'undefined') { 
+			        scrollPos = window.pageYOffset; 
+			    } 
+			    else if (typeof document.compatMode != 'undefined' && document.compatMode != 'BackCompat') { 
+			        scrollPos = document.documentElement.scrollTop; 
+			    } 
+			    else if (typeof document.body != 'undefined') { 
+			        scrollPos = document.body.scrollTop; 
+			    } 
+			    document.cookie = "scrollTop=" + scrollPos; //存储滚动条位置到cookies中   
+			} 
+			
+			
+			window.onload = function () { 
+			    if (document.cookie.match(/scrollTop=([^;]+)(;|$)/) != null) { 
+			        var arr = document.cookie.match(/scrollTop=([^;]+)(;|$)/); //cookies中不为空，则读取滚动条位置   
+			        document.documentElement.scrollTop = parseInt(arr[1]); 
+			        document.body.scrollTop = parseInt(arr[1]); 
+			    } 
+			}
+		});
+
+
     </script>
 
 </body>
