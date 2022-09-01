@@ -9,68 +9,80 @@
     <link rel="shortcut icon" href="../font/icon.ico" />
 	<link rel="icon" href="../font/icon.ico" type="image/ico" />
     <style>
-        .about-list-content {
-            width: 1200px;
+        .case-list-content {
+            max-width: 35%;
+            min-width: 500px;
             margin: 0 auto;
-            padding: 120px 20px;
-            color: #fff;
+            padding: 80px 20px;
+
+        }
+
+        /* .case-list-content .list:hover {
+            box-shadow: 0 0 12px #fff;
+        } */
+
+        .link+.link {
+            display: block;
+            margin-top: 50px;
+        }
+
+        .case-list-content img {
+            /* 315 and 182*/
+            display: block;
+            width: 100%;
+            height: auto;
+            margin-bottom: 16px;
+            border-radius: 8px;
+        }
+
+        .case-list-content .text {
+            font-size: 1em;
+            font-family:'myFontL';
+            line-height: 2em;
+            color: rgb(141, 141, 150);
             word-break: break-all;
         }
 
-		.about-list-content .title {
-			font-size: 2em;
-			word-break: break-all;
-			line-height: 3em;
-			font-family:'myFontH';
-			margin-top: 1.2em;
-			margin-bottom: 1em;
-			text-align: center;
-		}
-
-		.about-list-content .date {
+        
+		.case-list-content .textstrong{
 			font-size: 1em;
-			line-height: 1.6em;
-			font-family:'myFontL';
-			opacity: 0.5;
-			text-align: center;
-			margin-bottom: 5rem;
-		}
-
-		.about-list-content .text{
-			font-size: 1.1rem;
-			line-height: 2rem;
-			font-family:'myFont';
-		}
-
-		.btn {
-			display: inline-block;
-			padding: 0.6em rem;
-			border:2px solid #fff;
             font-family:'myFont';
-			border-color: #fff;
+            line-height: 2em;
+            color: #fff;
+            opacity: 0.8;
+            word-break: break-all;
+		}
+
+
+        .time {
+			display: inline-block;
+			padding: 1.4em 8em 1.4em 1em;
+			border:0.5px solid rgb(24, 25, 53);
+            background: rgb(24, 25, 53, 0.2);
+            border-radius: 4px;
+			cursor: url(/font/cursorlink.ico),pointer;
+			margin-bottom: 2em;
+		}
+
+        .time .title{
+            font-family:'myFontL';
 			color:#fff;
-			cursor: pointer;
-			opacity: 0.8;
-			margin-bottom: 4em;
-		}
+            opacity: 0.3;
+            font-size: 1em;
+            height: 1.6em;
+        }
 
-		.btn:hover {
-			/* box-shadow: 0 0 8px #fff; */
-			opacity: 1;
-		}
+        .time .second-title{
+            font-family:'myFontH';
+			color:#fff;
+            opacity: 0.8;
+            font-size: 1.4em;
+        }
 
-		.about-list-content img {
-			margin:40px 0px;
-			display: block;
-			width: 100%;
-		}
     </style>
-
 </head>
 
-<body>
-
-	
+<body onload=" window.setTimeout('get_times()',1);">
 	<!-- Wrapper -->
 	<div class="wrapper">
 		<!-- Header -->
@@ -83,48 +95,124 @@
                 <li><a class="active" href="about.html">关于</a></li>
             </ul>
         </header>
+
         <!-- Main -->
-        <div class="about-list-content">
-            <p class="text">
-                Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading
-                Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4
-                Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading
-                Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4
-                Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading
-                Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4
-                Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading
-                Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4
-                Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading
-                Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4 Heading Level 4
-                Heading Level 4 Heading Level 4 Heading Level 4
-            </p>
+        <div class="case-list-content">
+            <div class="time">
+                <p class="title">世界与我的密码</p>
+                <p class="second-title"><a id="sum_year"></a>-<a id="sum_day"></a>-<a id="sum_hour"></a>-<a id="sum_minute"></a>-<a id="sum_second"></a></p>
+            </div>
+            <div>
+                <p class="text">
+                    嗨, 这里是AllenHsu。我是一名UX设计师，曾服务于蓝月亮和岭南集团。<br>
+					日常工作主要是与产品、设计和用户体验相关，通过结合对产品的研究，极致的设计和对技术的理解来平衡解决方案。业余时间投入在学习 Coding 和动效制作中。<br><br>
+                    2017年，我在岭南集团为B端销售平台进行重构设计，一年多的时间里我领导了所有的需求定义、用户测试，到设计推导、界面设计等和产品相关的工作，相关的分享可以在<a href="case.html">uker项目的三个案例</a>中看到。
+                </p>
+                <p class="text">
+                    临近2019年，我加入中智达信，负责saas产品的全平台设计，这是一个好玩又有挑战性的工作。随着对“流程结构化、注重效率”的工程研究，我开始注重在用户测试中分析用户操作错误，提升产品易用性和易学性。相关的分享可以在<a href="case.html">osic项目的三个案例</a>中看到。<br><br>
+                </p>
+                <a class="textstrong">"尊重数据，保持创新"</a><a class="text">是我一直坚守和追求的设计原则，我希望可以产出更有说服力、更有效、更人性化的设计。<br>
+                    除了工作上的设计追求，我在专注于学习 coding 和动效制作。从最开始的HTML、CSS，SQL到现在的Python、R，让我对“释放数字时代下更多的生产力”感到着迷。
+                    是在2021年的时候我意识到这些简单的、零散的知识并不能满足更复杂创造需求，所以这段时间我在系统地学习一些技术知识，主要为SPSS和R语言的学习，另一方面，也在研究二维角色在AE上的表现。<br><br>
+                </a>
+                <p class="text">
+                    我会不定时分享日常学习和工作的思考，欢迎你和我一起，探索这个花花世界。
+                    你可以通过邮箱&thinsp;<i>always3lin@gmail.com</i>&thinsp;找到我。<br>
+                </p>
+
+                
+                </p>
+            </div>
+            </a>
         </div>
     </div>
 
 
-    <!-- Scripts -->
     <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
-    <script>
+    <script  type="text/javascript">
         $(document).ready(function () {
-        var fn = function () {
-            var w = document.body.clientWidth;
-            var rate = (w) / 1980
-            $(".wrapper").css({
-                zoom: rate
-            });
-        };
-        if (window.addEventListener) {
-            window.addEventListener("resize", function () {
-                fn();
-            });
-        } else if (window.attachEvent) {
-            window.attachEvent("onresize", function () {
-                fn();
-            });
+            var fn = function () {
+                var w = document.body.clientWidth;
+                var rate = (w) / 1920
+                $(".wrapper").css({
+                    zoom: rate
+                });
+            };
+            if (window.addEventListener) {
+                window.addEventListener("resize", function () {
+                    fn();
+                });
+            } else if (window.attachEvent) {
+                window.attachEvent("onresize", function () {
+                    fn();
+                });
+            }
+            fn();
+        });
+
+
+		$(function(){
+			window.onbeforeunload = function () { 
+			    var scrollPos; 
+			    if (typeof window.pageYOffset != 'undefined') { 
+			        scrollPos = window.pageYOffset; 
+			    } 
+			    else if (typeof document.compatMode != 'undefined' && document.compatMode != 'BackCompat') { 
+			        scrollPos = document.documentElement.scrollTop; 
+			    } 
+			    else if (typeof document.body != 'undefined') { 
+			        scrollPos = document.body.scrollTop; 
+			    } 
+			    document.cookie = "scrollTop=" + scrollPos; //存储滚动条位置到cookies中   
+			} 
+			
+			
+			window.onload = function () { 
+			    if (document.cookie.match(/scrollTop=([^;]+)(;|$)/) != null) { 
+			        var arr = document.cookie.match(/scrollTop=([^;]+)(;|$)/); //cookies中不为空，则读取滚动条位置   
+			        document.documentElement.scrollTop = parseInt(arr[1]); 
+			        document.body.scrollTop = parseInt(arr[1]); 
+			    } 
+			}
+		});
+
+        var date_start;
+        var i=0;
+
+        function start(){
+            date_start=new Date("1991/01/17 17:00:00");  //开始时间
+            start_time();
         }
-        fn();
-    });
+
+        function start_time(){ 
+            set= window.setTimeout("start_time()", 1);
+                var date_end= new Date(); //结束时间
+                var date_sum = date_end.getTime() - new Date(date_start).getTime(); //结束时间-开始时间 
+                //年
+                var year=Math.floor(date_sum/(365*24*60*60*1000));
+                //天数
+                var year_ys=date_sum%(365*24*60*60*1000)
+                var day=Math.floor(year_ys/(24*60*60*1000))
+                //小时数
+                var day_ds=year_ys%(24*60*60*1000)    //计算天数后剩余的毫秒数
+                var hour=Math.floor(day_ds/(60*60*1000))
+                //分钟数
+                var day_hs=day_ds%(60*60*1000)        //计算小时数后剩余的毫秒数
+                var minute=Math.floor(day_hs/(60*1000))
+                //秒数
+                var day_ms=day_hs%(60*1000)      //计算分钟数后剩余的毫秒数
+                var second=Math.round(day_ms/1000)
+                //返回值
+                document.getElementById("sum_year").innerHTML= year;
+                document.getElementById("sum_day").innerHTML= day;
+                document.getElementById("sum_hour").innerHTML= hour;
+                document.getElementById("sum_minute").innerHTML= minute;
+                document.getElementById("sum_second").innerHTML= second;
+        }
+        start();
+
     </script>
+
 
 </body>
 
