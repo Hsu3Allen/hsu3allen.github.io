@@ -1,0 +1,322 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>文章详情</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../css/main.css" />
+	<link rel="shortcut icon" href="../font/icon.ico" />
+	<link rel="icon" href="../font/icon.ico" type="image/ico" />
+    <style>
+
+        .article-detail {
+			width: 1000px;
+			margin: 0 auto;
+			margin-bottom: 200px;
+			padding: 100px 0px 100px 0px;
+			color: #fff;
+			word-break: break-all;
+		}
+
+		.article-detail .title {
+			font-size: 3em;
+			word-break: break-all;
+			line-height: 3em;
+			font-family:'myFontH';
+			text-align: center;
+		}
+
+		.article-detail .date {
+			font-size: 1.2em;
+			line-height: 1.2em;
+			font-family:'myFontL';
+			opacity: 0.5;
+			text-align: center;
+			margin-bottom: 4em;
+		}
+
+		.article-detail .text{
+			font-size: 1.1em;
+			line-height: 2em;
+			font-family:'myFontL';
+			color: #7b808a;
+		}
+
+		.article-detail .textpro{
+			font-size: 1.8em;
+			line-height: 2.4em;
+			font-family: 'myFont';
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 0.6em 2em;
+			border:2px solid #fff;
+			border-color: #fff;
+			font-family:'myFont';
+			color:#fff;
+			cursor: url(/font/cursorlink.ico),pointer;
+			opacity: 0.8;
+			margin-bottom: 4em;
+		}
+
+		.btn:hover {
+			/* box-shadow: 0 0 8px #fff; */
+			opacity: 1;
+		}
+
+		.quote{
+			margin: 0.25em 1.5em 0 0;
+		}
+
+		.quote::before{
+			content: "";
+			width: 35%;
+			display: block;
+			margin: 0 auto 1em;
+			height: 0;
+			border-top: 0.4em solid #152138;
+		}
+
+		.quote::after{
+			content: "";
+			width: 35%;
+			display: block;
+			margin: 2em auto 1em;
+			height: 0;
+			border-top: 0.4em solid #152138;
+		}
+
+		.quote-content{
+			display: block;
+			width: 90%;
+			text-align: center;
+			margin: 0 auto;
+			font-size: 1.4em;
+			line-height: 2em;
+			font-family: times,'Times New Roman',serif;
+			font-weight: 100;
+			opacity: 0.6;
+		}
+
+		.quote-content::before{
+			content: "“";
+			font-size: 4em;
+			opacity: .15;
+			font-family: times,'Times New Roman',serif;
+			display: inline-block;
+			transform: translate(-0.2em,0);
+		}
+
+		.quote-content::after{
+			content: "”";
+			font-size: 4em;
+			opacity: .15;
+			font-family: times,'Times New Roman',serif;
+			display: inline-block;
+			transform: translate(0.2em,0.5em);
+		}
+
+		.aligncenter {
+			clear: both;
+			display: block;
+			margin: auto;
+		}
+    </style>
+
+</head>
+
+<body>
+	
+	<!-- Wrapper -->
+	<div class="wrapper">
+		<!-- Header -->
+		<header id="header">
+            <a href="../index.html" class="logo"><span>AllenHsu</span></a>
+            <ul id="menu">
+                <li><a href="../index.html">首页</a></li>
+                <li><a class="active" href="../article.html">文章</a></li>
+                <li><a href="../case.html">案例</a></li>
+                <li><a href="../about.html">关于</a></li>
+            </ul>
+        </header>
+        <!-- Main -->
+        <div class="article-detail">
+            <div class="btn">
+				<a href="../article.html" style="color: #fff;">返回列表</a>
+			</div>
+			<p class="title">锻炼分析和解决问题的能力</p>
+			<p class="date">2020.02.27</p>
+			<p class="text">
+				一直以来，我们大部分的努力，都似乎是为了一件事情 —— <mark>解决我们在人生中所遇到的各种问题</mark>。比如：<br><br>
+				<i>
+					如何取得一个好成绩；<br>
+					如何处理好人际关系；<br>
+					如何追到喜欢的异性；<br>
+					如何拿到心仪的offer；<br>
+					如何胜任当下的工作；<br>
+					如何服务好自己的顾客；<br>
+					如何组建一个幸福的家；<br>
+					如何教育好自己的孩子；<br>
+					……<br><br>
+				</i>
+				我们每天都被这些问题所包围着，有的问题我们能够解决；但大多数情况下，我们并不能很好地解决；有些问题甚至会终身困扰我们，比如拖延症、早起早睡……<br>
+				那么解决问题的本质是什么？到底有没有一个简单的模型，能够帮助我们快速解决掉人生中所遇到的所有问题？<br><br>
+				我以前觉得是没有的，因为问题太复杂，因果太混乱，根本不可能有一个通用的模型，可以用来解决所有的问题。<br>
+				但我最近改变了这个想法。虽然问题是五花八门的，背后的因果也是复杂混乱的，但是解决问题的背后却有一套共通的模型。<br>
+				如果我们能够掌握这个通用模型，我认为它其实是能够极大地提升我们解决问题的效率的。<br>
+				这个模型是什么呢？我把它总结为三个盘：<br><br>
+			</p>
+			<p class="text" style="color: #fff;">沙盘——操盘——复盘。<br><br></p>
+			<p class="textpro">沙盘 —— 定义问题，分析原因，得出方案<br></p>
+			<p class="text" style="color: #fff;">在解决问题之前，我们到底需要做些什么？有没有一些必要的步骤？<br><br></p>
+			<p class="text">
+				这个问题肯定好多人都没思考过。大多数人解决问题都是靠经验直觉，直接就拿出一套解决方案，然后去试，试一下发现有用，就沉淀下来；试一下发现没用，再想别的办法。<br>
+				这种做法看似高效 —— 因为思考的过程确实变少了。<br>
+				但大多数时候，其实并不能给出一个好的解决方案，甚至会一直被这件事所困扰着，一直耗在这个地方。<br>
+				<mark>虽然思考是变少了，但是耗费的时间和精力却更多了。</mark><br><br>
+				举个例子，就拿拖延症这件事来说。相信大部分人都深受拖延症的困扰，但是大部分人是怎么解决这个问题呢？<br>
+				他首先会自己想各种办法，比如强行逼迫自己去做，结果往往都是三分钟热情，无法坚持；比如找人监督，在朋友圈发条说说，我要XXX了，请大家监督我；有的甚至直接放弃抵抗了，就一直拖，拖到截止日期，让压力逼迫自己行动，他们的口头禅是“deadline是第一生产力”。当他们发现这些办法都不太奏效时，有些人还会再挣扎一下，去知乎一下看看别人是怎么解决的，直接把别人的解决方案拿来用。这种做法很不错，站在巨人的肩膀上，确实能找到一个不错的解决方案。但大多数时候，也是不太奏效的。因为问题背后的原因太复杂，每个人的情况可能都不太一样，需要因地制宜。<br>
+				这就是大多数人解决问题的步骤，可以简单地概括为“直接从自己过去的经验和认知中，直觉性地拿出解决方案”.<br><br>
+			</p>
+			<p class="text" style="color: #fff;">从过去经验到解决方案的产出之间，真的没有别的步骤了吗？<br></p>
+			<p class="text">有的，但这需要我们深刻地洞悉“解决方案”的本质是什么。</p><br>
+			<p class="text">完备的、正确的因得到正确的果，即问题得到完美解决。<br>残缺的、错误的因得到错误的果，即问题不能得到解决。<br><br></p>
+			<p class="text" style="color: #fff;">解决问题的第一个步骤，应该是<mark>定义问题</mark>。<br><br></p>
+			<p class="textpro">沙盘 —— 定义问题</p>
+			<p class="text">
+				<cite>提出一个好的问题，往往比解决问题更重要。——爱因斯坦</cite><br><br>
+				能否提出一个好的问题，很大程度上取决于我们能否洞察造成这个问题背后的<mark>关键阻碍</mark>。<br>
+				找到关键阻碍之后，我们就能根据这些关键阻碍，去针对性地提出一些好的问题。<br>
+				比如早起的关键阻碍是什么？<br>
+				可能跟早睡有关，可能跟睡眠周期有关，可能跟早起的动机有关……洞悉了这些关键阻碍，你就可以提出更清晰的问题，比如“如何才能早睡？“、“在睡眠周期的哪一段更容易醒来？”……<br>
+				但麻烦的是，能否洞察问题背后的关键阻碍，还是要很大程度取决于我们本身的认知。<br>
+				<mark>认知是一道绕不过去的坎。</mark><br>
+			</p>
+			<p class="textpro">沙盘 —— 分析原因</p>
+			<p class="text">
+				<cite>存在即合理。——黑格尔</cite><br><br>
+				黑格尔很早就智慧地洞察到了这件事，他说「存在即合理」，说的就是这个意思，即任何事物的发生，背后必有其原因。<br>
+				当然，因果律并不是黑格尔提出来的，事实上几乎所有科学家都默认了这件事的存在，他们把因果律作为了研究事物的大前提，否则今天的一切知识都是没有意义的。<br>
+			</p>
+			<p class="text" style="color: #fff;">
+				寻找解决方案的过程，其实就是不断思考事物背后因果关系的过程，也就是不断寻找“造成这个问题的原因是什么”的过程。<br>
+			</p>
+			<p class="text">
+				简而言之，解决问题的核心，就在于你能够快速而且准确地洞察出事物背后的因果关系。<br>
+				我们可以把这种能力叫做<mark>洞察力</mark>，就是快速洞察事物背后因果关系的能力。这是人的一生中最重要的能力之一，它跟学习力、元认知等能力同等重要，甚至更重要，因为它就是我们在解决问题时最需要的能力。<br>
+				那么洞察力取决于什么呢？如何才能提升洞察力？它跟两个东西有关：<br><br>
+				<mark>一是，你此刻的认知水平</mark>。学习，就是能够快速提升认知，进而提升洞察力的重要方式之一。<br>
+				学习分为两种，一种是从自己的经历中学习，这种方式是必要的，但是成长速度很慢；一种是站在巨人的肩膀上前行，比如阅读书籍或者请教他人。<br>
+				这两种都重要，都要有，不可偏废哪一方。<br>
+				很多人一辈子都在学习，却很少有人学过如何学习，也就是学习方法的学习。我建议通过<mark>模型树</mark>的学习方法去建立一个强大的认知体系，它几乎融合了所有学习的底层原理，而且还有第一原理等哲科思维在里面，它是一种真正为洞察事物因果，提升解决问题的能力而生的学习方法。<br><br>
+				<mark>二是，一些重要的思维方式</mark>。分享一套简单而强大的分析因果的思维方式：<mark>第一原理 > 排列组合 > 结构思维 > 演绎思维</mark>，它的机制是这样的：<br>
+				<i>
+					1、找到事物背后的第一原理 —— 从起点原因（第一因）开始，创造一个树状结构（决策树）。只有第一因才能穷尽所有原因，而且第一因可以是多个的。<br>
+					2、进行排列组合 —— 尽可能穷尽所有情况。可以用矩阵模型、象限模型、坐标轴模型等多个模型来辅助。<br>
+					3、对所有元素进行结构化处理 —— 在这个过程中，可以用框架模型（组合框选）、金字塔模型（从上统下）来辅助，得到一个清晰的树状结构。<br>
+					4、演绎推理 —— 根据底层大框架，去分别进行演绎推理，给出解决方案。<br><br>
+				</i>
+				有时候需要几个认知同频的人一起努力，会有事半功倍的效果。<br><br>
+			</p>
+			<p class="textpro">沙盘 —— 得出方案</p>
+			<p class="text">
+				从上面的结构化处理和演绎推理，基本就可以得到解决方案了。但过程的分析我还没想好，但肯定的一条捷径就是 —— <mark>巨人思维</mark>，也就是在演绎推理中直接学习别人的方法。<br><br>
+			</p>
+			<p class="textpro">操盘</p>
+			<p class="text">
+				介绍一个模型 —— <mark>PDCA循环</mark>，它是美国质量管理专家沃特·阿曼德·休哈特（Walter A. Shewhart）首先提出的，由戴明采纳、宣传，获得普及，所以又称戴明环。<br>
+				PDCA本身是用于做质量管理的，质量管理分为四个阶段：<br><br>
+				<i>
+					Plan：计划<br>
+					Do：执行<br>
+					Check：检查<br>
+					Act：处理<br><br>
+				</i>
+			</p>
+			<p class="text" style="color: #fff;">简单来说，就是作出计划、实施计划、检查实施效果，然后将成功的纳入标准，不成功的留待下一循环去解决。<br><br></p>
+			<p class="text">
+				后来人们发现，这一模型不仅仅适用于质量管理，它似乎也是解决问题的基本步骤。<br>
+				在这里变形后，沙盘对应Plan计划，而Do/Check/Act则是操盘部分。<br>
+				如果解决方案能一次性成功，我们还需要从成功经历里总结经验，以便于下次使用。<br>
+				如果解决方案失败了，或者说并没有完全解决问题，那么我们还需要从失败里汲取教训，并重复上面的过程。<br>
+				而这两个过程，就是我们经常所说的复盘。<br><br>
+			</p>
+			<p class="textpro">复盘</p>
+			<p class="text" style="color: #fff;">如何才能做一次科学的复盘？需要复盘什么？</p><br>
+			<p class="text">
+				1、洞悉因果 —— 需要通过成功和失败，去洞悉做成一件事的因果。不能只复盘成功的部分，因为这容易陷入各种偏差，比如幸存者偏差；也不能只复盘失败的部分，因为成功的部分也能帮我们洞悉因果。<br>
+				2、提炼方法 —— 从里面提炼行之有效的方法论出来。<br><br>
+			</p>
+			<p class="text" style="color: #fff;">在复盘的时候应该如何复盘呢？</p><br>
+			<p class="text">
+				这里我们可以借用联想的经典复盘框架。<br><br>
+				<i>
+					1、回顾目标：回顾当初的目标是什么<br>
+					2、评估结果：把结果与目标的做对比<br>
+					3、分析原因：分析事物背后因果关系<br>
+					3、总结规律：总结规律，提炼方法论<br><br>
+				</i>
+			</p>
+			<p class="textpro">总结</p>
+			<p class="text" style="color: #fff;">
+				执行完方案获得反馈之后，我们需要重新走一遍沙盘的三大步骤“定义问题→分析原因→拿出方案”。<br>
+				通过学习输入更多信息，从而加深对学习的认知。<br><br>
+			</p>
+			<img src=" https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/pl1.png" class="aligncenter">
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+	<script>
+		$("#audio_btn").click(function () {
+			var music = document.getElementById("music");
+			if (music.paused) {
+				music.play();
+				$("#music_btn").attr("src", "font/musicoff.png");
+			} else {
+				music.pause();
+				$("#music_btn").attr("src", "font/musicon.png");
+			}
+		});
+
+		function playPause() {
+			var music = document.getElementById('music2');
+			var music_btn = document.getElementById('music_btn2');
+			if (music.paused) {
+				music.play();
+				music_btn.src = 'font/musicoff.png';
+			} else {
+				music.pause();
+				music_btn.src = 'font/musicon.png';
+			};
+		};
+		$(document).ready(function () {
+			var fn = function () {
+				var w = document.body.clientWidth;
+				var rate = (w) / 1980
+				$(".wrapper").css({
+					zoom: rate
+				});
+			};
+			if (window.addEventListener) {
+				window.addEventListener("resize", function () {
+					fn();
+				});
+			} else if (window.attachEvent) {
+				window.attachEvent("onresize", function () {
+					fn();
+				});
+			}
+			fn();
+		});
+	</script>
+		
+
+
+</body>
+
+</html>
