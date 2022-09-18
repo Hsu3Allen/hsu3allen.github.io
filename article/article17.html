@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>文章详情</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../css/main.css" />
+	<link rel="shortcut icon" href="../font/icon.ico" />
+	<link rel="icon" href="../font/icon.ico" type="image/ico" />
+    <style>
+
+        .article-detail {
+			width: 1000px;
+			margin: 0 auto;
+			margin-bottom: 200px;
+			padding: 100px 0px 100px 0px;
+			color: #fff;
+			word-break: break-all;
+		}
+
+		.article-detail .title {
+			font-size: 3em;
+			word-break: break-all;
+			line-height: 3em;
+			font-family:'myFontH';
+			text-align: center;
+		}
+
+		.article-detail .date {
+			font-size: 1.2em;
+			line-height: 1.2em;
+			font-family:'myFontL';
+			opacity: 0.5;
+			text-align: center;
+			margin-bottom: 4em;
+		}
+
+		.article-detail .text{
+			font-size: 1.1em;
+			line-height: 2em;
+			font-family:'myFontL';
+			color: #7b808a;
+		}
+
+		.article-detail .textpro{
+			font-size: 1.8em;
+			line-height: 2.4em;
+			font-family: 'myFont';
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 0.6em 2em;
+			border:2px solid #fff;
+			border-color: #fff;
+			font-family:'myFont';
+			color:#fff;
+			cursor: url(/font/cursorlink.ico),pointer;
+			opacity: 0.8;
+			margin-bottom: 4em;
+		}
+
+		.btn:hover {
+			/* box-shadow: 0 0 8px #fff; */
+			opacity: 1;
+		}
+
+		.quote{
+			margin: 0.25em 1.5em 0 0;
+		}
+
+		.quote::before{
+			content: "";
+			width: 35%;
+			display: block;
+			margin: 0 auto 1em;
+			height: 0;
+			border-top: 0.4em solid #152138;
+		}
+
+		.quote::after{
+			content: "";
+			width: 35%;
+			display: block;
+			margin: 2em auto 1em;
+			height: 0;
+			border-top: 0.4em solid #152138;
+		}
+
+		.quote-content{
+			display: block;
+			width: 90%;
+			text-align: center;
+			margin: 0 auto;
+			font-size: 1.4em;
+			line-height: 2em;
+			font-family: times,'Times New Roman',serif;
+			font-weight: 100;
+			opacity: 0.6;
+		}
+
+		.quote-content::before{
+			content: "“";
+			font-size: 4em;
+			opacity: .15;
+			font-family: times,'Times New Roman',serif;
+			display: inline-block;
+			transform: translate(-0.2em,0);
+		}
+
+		.quote-content::after{
+			content: "”";
+			font-size: 4em;
+			opacity: .15;
+			font-family: times,'Times New Roman',serif;
+			display: inline-block;
+			transform: translate(0.2em,0.5em);
+		}
+
+		.aligncenter {
+			clear: both;
+			display: block;
+			margin: auto;
+		}
+    </style>
+
+</head>
+
+<body>
+	
+	<!-- Wrapper -->
+	<div class="wrapper">
+		<!-- Header -->
+		<header id="header">
+            <a href="../index.html" class="logo"><span>AllenHsu</span></a>
+            <ul id="menu">
+                <li><a href="../index.html">首页</a></li>
+                <li><a class="active" href="../article.html">文章</a></li>
+                <li><a href="../case.html">案例</a></li>
+                <li><a href="../about.html">关于</a></li>
+            </ul>
+        </header>
+        <!-- Main -->
+        <div class="article-detail">
+            <div class="btn">
+				<a href="../article.html" style="color: #fff;">返回列表</a>
+			</div>
+			<p class="title">如何设计和评估 ABTest</p>
+			<p class="date">2021.07.13</p>
+			<p class="textpro">一、什么是 ABTest，以及为什么要进行A/B实验？</p><br>
+			<p class="text">
+				ABTest，是将用户随机分为至少两组，在某个时间节点，对他们施加不同的方案或策略（一般只设定一个唯一的变量，除此之外，不同组别的其他条件完全一样）。不施加其他影响的组为对照组（A 组），实施新方案（策略）的组为实验组（B 组）。A/B 实验就是通过对比 A 组和 B 组的差异，评估所施加的方案（策略）的收益，达到帮助业务决策的目的。<br><br>
+				公司里进行ABTest可以减少主观决策带来的损失，如果不进行ABTest，那么业务人员只能根据自身经验决策，发生错误的概率是50%，通过A/B实验，我们可以明确各项业务决策带来的指标变化，避免主观决策的不确定性导致的损失。<br><br>
+			</p>
+			<p class="textpro">二、ABTest适用场景</p><br>
+			<p class="text">理论上，方案不唯一的场景，都可以通过 ABTest来解决。我们平时会接触到的 A/B 场景可以归为以下 4 类。</p><br><br>
+			<p class="text" style="color: #fff;">产品功能</p>
+			<p class="text">产品功能大到产品整体布局、功能交互流程，小到某个按钮/banner的大小/颜色/UI，都可以通过A/B实验来决策。比如抖音和快手同为短视频平台，两者的产品布局有很大不同；比如淘宝和拼多多同为电商平台，拼多多无购物车，这些都属于产品功能的不同。</p><br><br>
+			<p class="text" style="color: #fff;">运营策略</p>
+			<p class="text">运营策略常见的场景有两种，一种是用户运营策略，比如电商app优惠券的发放人群、优惠券额度、优惠券商品品类等；一种是文案策略，比如push文案、banner文案等。不同的策略带来的转化率可能有较大差异，通过A/B实验选择最优方案。</p><br><br>
+			<p class="text" style="color: #fff;">推荐算法</p>
+			<p class="text">推荐算法相比产品功能、运营策略运用的更广泛，实验流程更简单。推荐算法是指app根据用户个人兴趣偏好，推荐其更感兴趣的内容。由于推荐算法非常复杂，算法调整带来的不确定性更高，故企业对算法优化的推全更谨慎。</p><br><br>
+			<p class="text" style="color: #fff;">客户端性能</p>
+			<p class="text">客户端性能是指用户启动app时长、延时、内容加载方式、卡顿、内存耗损等等，app与手机交互方式。如果app性能差，会直接导致用户体验变差，甚至会影响到推荐算法的推荐效果。</p><br><br>
+			<p class="textpro">三、如何设计和评估ABTest？</p><br>
+			<p class="text" style="color: #fff;">1、ABTest方案设计</p>
+			<p class="text" style="color: #fff;">确定实验流量大小：根据实验影响用户群大小，明确实验可被观测的最小流量。</p><br>
+			<p class="text">1、实验流量开太小会导致实验指标不置信。</p><br>
+			<p class="text">2、实验流量开太大，万一有严重负向可能对业务造成不能挽回的损失。</p><br>
+			<p class="text">3、与业务方确认实验观测指标：根据业务目的，和实验可能影响范围，明确观测指标，作为后续实验扩量/推全，或者下线的依据；并确保数据均可获取，如果不能获取，及时跟数仓沟通埋点需求，保证后续实验可评估。</p><br>
+			<p class="text">4、实验开启前，至少提前一周开启实验（这段时间我们简称为preAA），便于后续观察指标变化时，排除分组不均带来的数据影响。</p><br>
+			<p class="text">5、虽然理论上ABTest要求每组是无差异的，但实际分组时，可能仍然存在组间差异。理论上会建议业务方重开实验观测，但实际操作中时间成本会比较大，所以大概率不可行，我们需要人工排除组间差异来判断指标的变化。</p><br><br>
+			<p class="text" style="color: #fff;">2、ABTest效果评估</p>
+			<p class="text" style="color: #fff;">实验评估之前，需要确定实验最短观测周期：</p><br>
+			<p class="text">1、对于不需要发版的实验：一般实验开始后一周可出具实验报告，如果部分指标趋势仍然呈正向或负向加剧的趋势，则最终结论需要等所有有变化的指标稳定后给出。</p><br>
+			<p class="text">2、需要发版的实验：选版本覆盖率达到80%以上后，再观测一周。如果业务比较着急也可以限制版本分析，但是这样我们无法排除分组差异导致的组间差距，故只能参考，不可作为最终的数据结论。</p><br><br>
+			<p class="text" style="color: #fff;">判断指标是否显著。</p><br>
+			<p class="text">1、优先观测指标变化趋势：显著性只是一个95%的概率问题，不代表100%的结论。实际工作中，我更推荐优先通过指标变化趋势线判断。如果趋势线观测到负向或者正向趋势，再辅助假设检验确定指标是否是显著正向或负向。</p><br>
+			<p class="text">2、考虑preAA阶段的指标差异：前面我们提到虽然理论上A/B实验要求每组是无差异的，但实际分组时，可能仍然存在组间差异。</p><br><br>
+			<p class="text">下面我们以下图举例说明，假设9月7日实验生效，base1和base2均为对照组，exp1和exp2为实验组，下图为某个指标各组相比base1的变化趋势图。</p><br><br>
+			<p class="text">1、如果不观测分组差异，即preAA的差异，只观察9月7日及之后的趋势，我们很容易看到exp2组相比base1是+0.06%左右。但是结合实验前趋势发现，+0.06%的差异是由于分组不均带来的，该实验对exp2组指标并未有正向影响。</p><br>
+			<p class="text">2、指标的变化与我们选取的时间段有关，假如我们选取9月8日-9月12日区间段看，exp1的指标相比实验前是有明显的正向趋势的，但是拉长观察周期，exp1其实也是在正常范围内波动。</p><br><br>
+			<p class="text">综上两点，指标是否显著，我们需求排除preAA的影响，长线观察指标变化趋势，最后辅助统计学检验来确定指标是否显著。</p><br><br>
+			<img src=" https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/ab1.png" class="aligncenter" width="800"><br><br>
+			<p class="text" style="color: #fff;">3、实验决策</p>
+			<p class="text">
+				ABTest不适宜长期观察，因为对于一个产品，不宜同时存在多种方案，让用户之间存在明显差异。另外，ABTest的客户端代码也会增加 App 包的大小，新用户对此比较敏感，可能会影响用户的下载转化；再次，ABTest可用的流量是有限的，长期占据流量也是一种资源浪费。所以需要对实验结果尽快决策。<br><br>
+				如果实验组的关键指标显著负向，可以先下线实验，业务方有了新的优化方案再上线观察；如果观察到的关键指标变化不大，但是功能本身的改动很大，建议先扩大流量观察，再推全；如果实验组指标有正向收益，可以直接推全。<br><br>
+			</p>
+			<p class="text" style="color: #fff;">这里重点再讨论一个问题，即实验各项指标均无影响，是不是就可以推全？我认为不是的。</p>
+			<p class="text">
+				1、从单一实验的角度看：功能侧改动，最终是否应该推全，不应该以有没有负向作为一个评估标准，合理的评估标准是功能本身有什么价值。需要从产品的视角去理解和思考这个功能，为什么要做这个功能、功能的上限在哪里、后续有什么发展。因为产品UI的改动，它的样式决定了ta的上限，而后续的调优以及算法的优化，会逐渐的逼近这个上限，如果没有优化的空间（即上线即上限），那就需要对这个功能的价值打个问号。<br><br>
+				2、从全局的角度看，单一实验的影响可能并不明显，但是多个这样的实验都推全的话，可能就会造成负向影响。比如abc 3个实验各增加一个功能，单个实验没影响，但是都上线的话，可能就有影响。<br><br>
+			</p>
+			<p class="textpro">四、总结</p><br>
+			<p class="text">通过上述阐述，我们知道，ABTest可以量化不同方案优劣。但是 A/B 实验也是有局限的，它只能通过比较回答谁好谁差，但它并不能告诉我们最优答案，也不能告诉我们指标变化的因果关系。另外，ABTest也不能回答战略性选择的问题，比如一个实验会导致活跃用户数下降，但是也能提升用户使用 App 的时长和打开 App 的次数。这种偏战略的数据结果，我们很难通过数据来决策。</p><br><br>
+			<p class="text">目前 ABTest的方法已经比较普及了，甚至一些公司出现过分依赖ABTest，造成 ABTest滥用的现象。我们知道 ABTest有诸多优点，但是 ABTest也是有成本的。所以，现实中我们要辅以对业务的专业判断，及历史累计的经验来综合决策，避免 ABTest造成的资源浪费。
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+	<script>
+		$("#audio_btn").click(function () {
+			var music = document.getElementById("music");
+			if (music.paused) {
+				music.play();
+				$("#music_btn").attr("src", "font/musicoff.png");
+			} else {
+				music.pause();
+				$("#music_btn").attr("src", "font/musicon.png");
+			}
+		});
+
+		function playPause() {
+			var music = document.getElementById('music2');
+			var music_btn = document.getElementById('music_btn2');
+			if (music.paused) {
+				music.play();
+				music_btn.src = 'font/musicoff.png';
+			} else {
+				music.pause();
+				music_btn.src = 'font/musicon.png';
+			};
+		};
+		$(document).ready(function () {
+			var fn = function () {
+				var w = document.body.clientWidth;
+				var rate = (w) / 1980
+				$(".wrapper").css({
+					zoom: rate
+				});
+			};
+			if (window.addEventListener) {
+				window.addEventListener("resize", function () {
+					fn();
+				});
+			} else if (window.attachEvent) {
+				window.attachEvent("onresize", function () {
+					fn();
+				});
+			}
+			fn();
+		});
+	</script>
+		
+
+
+</body>
+
+</html>
