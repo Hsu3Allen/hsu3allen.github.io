@@ -1,0 +1,373 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>文章详情</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../css/main.css" />
+	<link rel="shortcut icon" href="../font/icon.ico" />
+	<link rel="icon" href="../font/icon.ico" type="image/ico" />
+    <style>
+
+        .article-detail {
+			width: 1000px;
+			margin: 0 auto;
+			margin-bottom: 200px;
+			padding: 100px 0px 100px 0px;
+			color: #fff;
+			word-break: break-all;
+		}
+
+		.article-detail .title {
+			font-size: 3em;
+			word-break: break-all;
+			line-height: 3em;
+			font-family:'myFontH';
+			text-align: center;
+		}
+
+		.article-detail .date {
+			font-size: 1.2em;
+			line-height: 1.2em;
+			font-family:'myFontL';
+			opacity: 0.5;
+			text-align: center;
+			margin-bottom: 4em;
+		}
+
+		.article-detail .text{
+			font-size: 1.1em;
+			line-height: 2em;
+			font-family:'myFontL';
+			color: #7b808a;
+		}
+
+		.article-detail .textpro{
+			font-size: 1.8em;
+			line-height: 2.4em;
+			font-family: 'myFont';
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 0.6em 2em;
+			border:2px solid #fff;
+			border-color: #fff;
+			font-family:'myFont';
+			color:#fff;
+			cursor: url(/font/cursorlink.ico),pointer;
+			opacity: 0.8;
+			margin-bottom: 4em;
+		}
+
+		.btn:hover {
+			/* box-shadow: 0 0 8px #fff; */
+			opacity: 1;
+		}
+
+		.quote{
+			margin: 0.25em 1.5em 0 0;
+		}
+
+		.quote::before{
+			content: "";
+			width: 35%;
+			display: block;
+			margin: 0 auto 1em;
+			height: 0;
+			border-top: 0.4em solid #152138;
+		}
+
+		.quote::after{
+			content: "";
+			width: 35%;
+			display: block;
+			margin: 2em auto 1em;
+			height: 0;
+			border-top: 0.4em solid #152138;
+		}
+
+		.quote-content{
+			display: block;
+			width: 90%;
+			text-align: center;
+			margin: 0 auto;
+			font-size: 1.4em;
+			line-height: 2em;
+			font-family: times,'Times New Roman',serif;
+			font-weight: 100;
+			opacity: 0.6;
+		}
+
+		.quote-content::before{
+			content: "“";
+			font-size: 4em;
+			opacity: .15;
+			font-family: times,'Times New Roman',serif;
+			display: inline-block;
+			transform: translate(-0.2em,0);
+		}
+
+		.quote-content::after{
+			content: "”";
+			font-size: 4em;
+			opacity: .15;
+			font-family: times,'Times New Roman',serif;
+			display: inline-block;
+			transform: translate(0.2em,0.5em);
+		}
+
+		.aligncenter {
+			clear: both;
+			display: block;
+			margin: auto;
+		}
+
+		pre {
+			display: inline-block;
+			padding: 0.6em 16em 0.6em 1em;
+			border:0.5px solid rgb(74, 74, 74);
+			border-radius: 4px;
+			font-family: Arial;
+			color: #fff;
+			margin: 25px;
+			font-size: 1.1em;
+			line-height: 2em;
+			opacity: 0.5;
+		}
+    </style>
+
+</head>
+
+<body>
+	
+	<!-- Wrapper -->
+	<div class="wrapper">
+		<!-- Header -->
+		<header id="header">
+            <a href="../index.html" class="logo"><span>AllenHsu</span></a>
+            <ul id="menu">
+                <li><a href="../index.html">首页</a></li>
+                <li><a class="active" href="../article.html">文章</a></li>
+                <li><a href="../case.html">案例</a></li>
+                <li><a href="../about.html">关于</a></li>
+            </ul>
+        </header>
+        <!-- Main -->
+        <div class="article-detail">
+            <div class="btn">
+				<a href="../article.html" style="color: #fff;">返回列表</a>
+			</div>
+			<p class="title">如何提升CSS编写效率</p>
+			<p class="date">2022.05.12</p>
+			<p class="textpro">一、定义</p><br>
+			<p class="text">
+				在产品开发过程中，经常会遇到规范不统一所导致的还原度低和可维护性差的问题，所以我参考<a href="https://tailwindcss.com/" style="color:#5ef2ff;" target="_blank">Tailwind CSS</a> 和实际项目中遇到的问题，总结出了以下规范：<br><br>
+			</p>
+			<p class="textpro">整体思路：</p><br>
+			<p class="text">
+				1、按照设计规范，提前用 Class 类名 定义基本样式，并直接组合使用。<br>
+				2、只有在需要写特殊布局或需要定位元素时，才写自定义 Class。<br>
+			</p>
+			<p class="textpro">解决问题：</p><br>
+			<p class="text">
+				1、所有的样式都是由定义好的类名组合而来，可以和设计规范做到完全统一。<br>
+				2、减少自定义 Class，提高代码复用率。<br>
+				3、减少交付时的不确定因素，提高验收通过率。<br>
+				4、提升可读性。<br>
+			</p>
+			<p class="textpro">一些原则：</p><br>
+			<p class="text">
+				1、使用 CSS 原生变量。<br>
+				2、如果不必要，不写 Class。<br>
+				3、不要随意使用&lt;p&gt;标签， 因为&lt;p&gt;标签有默认的段落样式。<br>
+			</p>
+			<p class="textpro">使用示例：</p>
+			<pre lang="java" class="prettyprint">
+&lt;div class=&quot;flex-c mt-24 radius-l bg-tran-4&quot;&gt;
+	&lt;div class=&quot;h2 text-tran-50 &quot;&gt;Title&lt;/div&gt;
+	&lt;div class=&quot;p4 text-tran-30&quot;&gt;Desc&lt;/div&gt;
+&lt;/div&gt;</pre>
+			<p class="textpro">默认结构：</p>
+			<pre lang="java" class="prettyprint">
+styles
+- index.scss
+- custom  
+	- index.scss
+- variables  
+	- base.scss  
+	- custom.scss
+- variants  
+	- base.scss  
+	- custom.scss</pre>
+			<p class="textpro">说明：</p>
+			<pre lang="java" class="prettyprint">
+styles
+- index.scss（默认入口文件，只负责引用，不写样式）
+- custom（自定义样式目录）  
+	- index.scss（主文件，负责引用其它文件，可写样式） 
+	- ...（按模块分文件写对应样式）
+- variables（变量目录） 
+	- base.scss（默认变量，通用）  
+	- custom.scss（通过引用默认变量定义的自定义变量，不通用）
+- variants（样式目录）  
+	- base.scss（默认样式，通用）  
+	- custom.scss（自定义样式，通常是一些特定用法的 Class，不通用）</pre>
+			<p class="textpro">例子：</p>
+			<p class="text" style="color: #fff;">示例：入口文件</p>
+			<pre lang="java" class="prettyprint">
+styles
+- index.scss</pre>
+			<pre lang="java" class="prettyprint">
+@import &quot;./custom/index.scss&quot;;
+@import &quot;./variables/base.scss&quot;;
+@import &quot;./variables/custom.scss&quot;;
+@import &quot;./variants/base.scss&quot;;
+@import &quot;./variants/custom.scss&quot;;</pre>
+			<p class="text" style="color: #fff;">示例：自定义样式主文件</p>
+			<pre lang="java" class="prettyprint">
+custom
+- index.scss</pre>
+			<pre lang="java" class="prettyprint">
+@import &#x27;./format.scss&#x27;;
+@import &#x27;./shadowMenu.scss&#x27;;
+@import &#x27;./layout.scss&#x27;;
+@import &#x27;./form.scss&#x27;;
+@import &#x27;./animation.scss&#x27;;
+@import &#x27;./highlight.scss&#x27;...</pre>
+			<p class="text" style="color: #fff;">示例：variables - base</p>
+			<pre lang="java" class="prettyprint">
+- variables（变量目录）  
+	- base.scss（默认变量，可以通用）</pre>
+			<pre lang="java" class="prettyprint">
+:root {
+	--color-tran-4: rgba(255, 255, 255, 0.04);
+	--color-tran-6: rgba(255, 255, 255, 0.06);
+	--color-tran-8: rgba(255, 255, 255, 0.08);
+	--color-tran-12: rgba(255, 255, 255, 0.12);
+	--color-tran-18: rgba(255, 255, 255, 0.18);
+	--color-tran-30: rgba(255, 255, 255, 0.3);
+	--color-tran-50: rgba(255, 255, 255, 0.5);
+	--color-tran-70: rgba(255, 255, 255, 0.7);
+	--color-tran-90: rgba(255, 255, 255, 0.9);
+	...
+}</pre>
+			<p class="text" style="color: #fff;">示例：variables - custom</p>
+			<pre lang="java" class="prettyprint">
+- variables（变量目录）
+	- custom.scss（通过引用默认变量定义的自定义变量，不通用）</pre>
+			<pre lang="java" class="prettyprint">
+:root {
+	--color-main: var(--color-gray-7);
+	--color-text: var(--color-tran-90);
+	--color-background: var(--color-tran-6);
+	--border-white: var(--color-tran-6);
+	--color-tab-text: var(--color-tran-50);
+	--color-tab-text-hover: var(--color-tran-70);
+	--color-tab-text-active: var(--color-tran-90);
+	--color-tab-underline-active: var(--color-tran-90);
+}</pre>
+			<p class="text" style="color: #fff;">示例：variants - base</p>
+			<pre lang="java" class="prettyprint">
+- variants（样式目录）
+	- base.scss（默认样式，可以通用）</pre>
+			<pre lang="java" class="prettyprint">
+.text-tran-4 {
+	color: var(--color-tran-4);
+	}
+	.text-tran-6 {
+	color: var(--color-tran-6);
+	}
+	.text-tran-8 {
+	color: var(--color-tran-8);
+	}
+	.text-tran-12 {
+	color: var(--color-tran-12);
+	}
+	.text-tran-30 {
+	color: var(--color-tran-30);
+	}
+	.text-tran-50 {
+	color: var(--color-tran-50);
+	}
+	.text-tran-70 {
+	color: var(--color-tran-70);
+	}
+	.text-tran-90 {
+	color: var(--color-tran-90);
+	}
+	...</pre>
+			<p class="text" style="color: #fff;">示例：variants - custom</p>
+			<pre lang="java" class="prettyprint">
+- variants（样式目录）
+	- custom.scss（自定义样式，通常是一些特定用法的 Class，不通用）</pre>
+			<pre lang="java" class="prettyprint">
+.border-b-block {
+	box-shadow: inset 0px -1px 0px var(--border-black);
+	}
+	.border-b-wrap {
+	box-shadow: inset 0px -1px 0px var(--border-white);
+	}
+	.input-focus {
+	box-shadow: 0 0 0 1px var(--color-focus-border) inset;
+	}</pre>
+			<p class="textpro">需要继续思考</p>
+			<p class="text" style="color: #fff;">
+				如何复用多个类名的集合？<br>
+				是否需要 VSCode 插件来提示和自动补全默认类名?<br>
+			</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+	<script>
+		$("#audio_btn").click(function () {
+			var music = document.getElementById("music");
+			if (music.paused) {
+				music.play();
+				$("#music_btn").attr("src", "font/musicoff.png");
+			} else {
+				music.pause();
+				$("#music_btn").attr("src", "font/musicon.png");
+			}
+		});
+
+		function playPause() {
+			var music = document.getElementById('music2');
+			var music_btn = document.getElementById('music_btn2');
+			if (music.paused) {
+				music.play();
+				music_btn.src = 'font/musicoff.png';
+			} else {
+				music.pause();
+				music_btn.src = 'font/musicon.png';
+			};
+		};
+		$(document).ready(function () {
+			var fn = function () {
+				var w = document.body.clientWidth;
+				var rate = (w) / 1980
+				$(".wrapper").css({
+					zoom: rate
+				});
+			};
+			if (window.addEventListener) {
+				window.addEventListener("resize", function () {
+					fn();
+				});
+			} else if (window.attachEvent) {
+				window.attachEvent("onresize", function () {
+					fn();
+				});
+			}
+			fn();
+		});
+	</script>
+		
+
+
+</body>
+
+</html>
