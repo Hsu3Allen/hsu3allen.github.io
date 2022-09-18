@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>文章详情</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../css/main.css" />
+	<link rel="shortcut icon" href="../font/icon.ico" />
+	<link rel="icon" href="../font/icon.ico" type="image/ico" />
+    <style>
+
+        .article-detail {
+			width: 1000px;
+			margin: 0 auto;
+			margin-bottom: 200px;
+			padding: 100px 0px 100px 0px;
+			color: #fff;
+			word-break: break-all;
+		}
+
+		.article-detail .title {
+			font-size: 3em;
+			word-break: break-all;
+			line-height: 3em;
+			font-family:'myFontH';
+			text-align: center;
+		}
+
+		.article-detail .date {
+			font-size: 1.2em;
+			line-height: 1.2em;
+			font-family:'myFontL';
+			opacity: 0.5;
+			text-align: center;
+			margin-bottom: 4em;
+		}
+
+		.article-detail .text{
+			font-size: 1.1em;
+			line-height: 2em;
+			font-family:'myFontL';
+			color: #7b808a;
+		}
+
+		.article-detail .textpro{
+			font-size: 1.8em;
+			line-height: 2.4em;
+			font-family: 'myFont';
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 0.6em 2em;
+			border:2px solid #fff;
+			border-color: #fff;
+			font-family:'myFont';
+			color:#fff;
+			cursor: url(/font/cursorlink.ico),pointer;
+			opacity: 0.8;
+			margin-bottom: 4em;
+		}
+
+		.btn:hover {
+			/* box-shadow: 0 0 8px #fff; */
+			opacity: 1;
+		}
+
+		.quote{
+			margin: 0.25em 1.5em 0 0;
+		}
+
+		.quote::before{
+			content: "";
+			width: 35%;
+			display: block;
+			margin: 0 auto 1em;
+			height: 0;
+			border-top: 0.4em solid #152138;
+		}
+
+		.quote::after{
+			content: "";
+			width: 35%;
+			display: block;
+			margin: 2em auto 1em;
+			height: 0;
+			border-top: 0.4em solid #152138;
+		}
+
+		.quote-content{
+			display: block;
+			width: 90%;
+			text-align: center;
+			margin: 0 auto;
+			font-size: 1.4em;
+			line-height: 2em;
+			font-family: times,'Times New Roman',serif;
+			font-weight: 100;
+			opacity: 0.6;
+		}
+
+		.quote-content::before{
+			content: "“";
+			font-size: 4em;
+			opacity: .15;
+			font-family: times,'Times New Roman',serif;
+			display: inline-block;
+			transform: translate(-0.2em,0);
+		}
+
+		.quote-content::after{
+			content: "”";
+			font-size: 4em;
+			opacity: .15;
+			font-family: times,'Times New Roman',serif;
+			display: inline-block;
+			transform: translate(0.2em,0.5em);
+		}
+
+		.aligncenter {
+			clear: both;
+			display: block;
+			margin: auto;
+		}
+    </style>
+
+</head>
+
+<body>
+	
+	<!-- Wrapper -->
+	<div class="wrapper">
+		<!-- Header -->
+		<header id="header">
+            <a href="../index.html" class="logo"><span>AllenHsu</span></a>
+            <ul id="menu">
+                <li><a href="../index.html">首页</a></li>
+                <li><a class="active" href="../article.html">文章</a></li>
+                <li><a href="../case.html">案例</a></li>
+                <li><a href="../about.html">关于</a></li>
+            </ul>
+        </header>
+        <!-- Main -->
+        <div class="article-detail">
+            <div class="btn">
+				<a href="../article.html" style="color: #fff;">返回列表</a>
+			</div>
+			<p class="title">AB Test的分层分流</p>
+			<p class="date">2021.08.08</p>
+			<p class="textpro">一、定义</p><br>
+			<p class="text">
+				在网络分析中，A / B测试（桶测试或分流测试）是一个随机实验，通常有两个变体，A和B。利用控制变量法保持有单一变量的前提下，将A、B数据进行对比，得出实验结论。<br><br>
+			</p>
+			<p class="textpro">二、简述</p><br>
+			<p class="text">通常网站会利用分层和分流的机制保证本站的流量高可用，原因有以下几点：</p><br>
+			<p class="text">
+				（1）网站的流量是有限的。<br><br>
+				（2）实验的对象是多层的或同一层内互不干扰的。<br><br>
+				<i>
+					&emsp;&emsp;多层：例如网站不仅仅有UI层（界面），通常还有算法层等。<br>
+					&emsp;&emsp;同一层内互不干扰：例如网站的推荐位有多个（首页推荐位、商详页推荐位）。<br><br>
+				</i>
+				（3）AB tests的需求是大量的。<br><br>
+				AB 是一种科学的利用数据证明方案可行性的手段，一般在网站中广泛使用。如果流量不进行分层、分流可能会导致实验一在进行中占用了全站的80%的流量，实验二就只能使用20%的流量。<br><br>
+				因此良好的分层、分流规则可以充分使用网站的流量。<br><br>
+			</p>
+			<p class="textpro">三、分层规则</p><br>
+			<p class="text" style="color: #fff;">1. 正交、互斥</p>
+			<p class="text">
+				什么是正交？<br><br>
+				我们有100个兵乓球，随机拿出来50个染成蓝色，50个染成白色，则我们有蓝色、白色兵乓球各50个，现在我们把这100个兵乓球重新放在袋子中摇匀，随机拿出50个兵乓球，那么这50个兵乓球颜色蓝色和白色各25。<br><br>
+				<mark>正交实验：</mark>每个独立实验为一层，层与层之间流量是正交的，一份流量穿越每层实验时，都会再次随机打散，且随机效果离散。<br><br>
+				什么是互斥？<br><br>
+				我们有100个兵乓球，每25个为一组，分别染成蓝、白、橘、绿。若X实验拿的是蓝色、白色则Y实验只能拿橘色和绿色，我们说X实验的和Y实验是互斥的。<br><br>
+				<mark>互斥实验：</mark>实验在同一层拆分流量，且不论如何拆分，不同组的流量是不重叠的。
+			</p>
+			<p class="text" style="color: #fff;">2. 分层、分流规则</p>
+			<p class="text">
+				流量从上往下流过分流模型：<br><br>
+				<img src=" https://website-1313160582.cos.ap-beijing.myqcloud.com/uPic/ab02.png" class="aligncenter" width="800"><br><br>
+			</p>
+			<p class="text" style="color: #fff;">（1）规则详述：</p><br>
+			<p class="text">
+				<i>
+					&emsp;域1和域2拆分流量，此时域1和域2是互斥的。<br>
+					&emsp;流量流过域2中的B1、B2、B3时，它们的流量都是与域2的流量相等。此时B1-B2-B3的流量是正交的。<br>
+					&emsp;扩展：流量流过域2中的B1层时，又把B1层分为了B1-1，B1-2，B1-3，此时B1-1，B1-2，B1-3之间又是互斥的。<br><br>
+				</i>
+				根据以上规则我们可以不断的在此模型中增加域、层，并且可以互相嵌套。这要与实际的业务相匹配，拆分过多的结构可能会把简单的业务复杂化，拆分过少的结构又可能不满足实际业务。<br><br>
+			</p>
+			<p class="text" style="color: #fff;">（2）使用场景</p><br>
+			<p class="text">
+				例1：B1层、B2层、B3层可能分别为：UI层、搜索结果层、广告结果层，这几层基本上是没有任何的业务关联度的，即使共用相同的流量（流量正交）也不会对实际的业务造成结果。<br><br>
+				但是如果不同层之间所进行的试验互相关联，如B1层是修改的一个页面的按钮文字颜色，B2层是修改的按钮的颜色，当按钮文字颜色和按钮颜色一样时，该按钮已经是不可用的了。因此建议同一类型的实验在同一层内进行，并且需要考虑到不同实验互相的依赖。<br><br>
+				例2：域1的此种分流的意义在于，当我们做一个实验，并且希望其他任何实验都不能对我实验进行干扰，保证最后实验的可信度。<br><br>
+				有兴趣的朋友可以去看一下Goolge的原文 ———— 《Overlapping Experiment Infrastructure:More, Better, Faster Experimentation》。<br><br>
+			</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+	<script>
+		$("#audio_btn").click(function () {
+			var music = document.getElementById("music");
+			if (music.paused) {
+				music.play();
+				$("#music_btn").attr("src", "font/musicoff.png");
+			} else {
+				music.pause();
+				$("#music_btn").attr("src", "font/musicon.png");
+			}
+		});
+
+		function playPause() {
+			var music = document.getElementById('music2');
+			var music_btn = document.getElementById('music_btn2');
+			if (music.paused) {
+				music.play();
+				music_btn.src = 'font/musicoff.png';
+			} else {
+				music.pause();
+				music_btn.src = 'font/musicon.png';
+			};
+		};
+		$(document).ready(function () {
+			var fn = function () {
+				var w = document.body.clientWidth;
+				var rate = (w) / 1980
+				$(".wrapper").css({
+					zoom: rate
+				});
+			};
+			if (window.addEventListener) {
+				window.addEventListener("resize", function () {
+					fn();
+				});
+			} else if (window.attachEvent) {
+				window.attachEvent("onresize", function () {
+					fn();
+				});
+			}
+			fn();
+		});
+	</script>
+		
+
+
+</body>
+
+</html>
